@@ -1,0 +1,152 @@
+[
+    {
+      "_comment": "These are illustrative examples showing the chunk schema — NOT real scraped content. Run notebooks/01_scraping.ipynb then notebooks/02_build_index.ipynb to generate real chunks.",
+      "chunk_id": "3e9b60b8-876c-49a7-a307-30fb4470e3c3",
+      "text": "Employers are required to consider all formal FWA requests from employees properly and fairly. Under the Tripartite Guidelines on Flexible Work Arrangement Requests (TG-FWAR), employers must respond in writing within two months of receiving a request. The response must either approve the request, offer a mutually agreed alternative, or reject the request with a valid reason.",
+      "token_count": 72,
+      "source": "MOM",
+      "category": "flexible_work",
+      "region": "singapore",
+      "type": "pdf",
+      "title": "Tripartite Guidelines on Flexible Work Arrangement Requests (TG-FWAR)",
+      "url": "https://www.mom.gov.sg/-/media/mom/documents/press-releases/2024/tripartite-guidelines-on-flexible-work-arrangement-requests.pdf",
+      "scraped_at": "2025-01-15T08:32:11",
+      "strategy": "recursive",
+      "parent_id": null,
+      "answer_type": "procedure",
+      "role_relevance": "hr",
+      "topic_tags": [
+        "fwa request",
+        "employer response",
+        "approval process"
+      ]
+    },
+    {
+      "chunk_id": "a1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+      "text": "Workplace harassment is defined as any behaviour that is unwanted and offensive to the recipient, and which a reasonable person would find distressing. This includes verbal abuse, physical intimidation, cyber-bullying through work communication channels, and sexual harassment. Organisations should adopt a zero-tolerance stance and establish clear reporting channels for affected employees.",
+      "token_count": 68,
+      "source": "MOM",
+      "category": "harassment",
+      "region": "singapore",
+      "type": "pdf",
+      "title": "Tripartite Advisory on Managing Workplace Harassment",
+      "url": "https://www.mom.gov.sg/-/media/mom/documents/employment-practices/guidelines/tripartite-advisory-on-managing-workplace-harassment.pdf",
+      "scraped_at": "2025-01-15T08:35:22",
+      "strategy": "recursive",
+      "parent_id": null,
+      "answer_type": "definition",
+      "role_relevance": "hr",
+      "topic_tags": [
+        "workplace harassment",
+        "zero tolerance",
+        "reporting channels"
+      ]
+    },
+    {
+      "chunk_id": "b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7f",
+      "text": "The five principles of the Tripartite Guidelines on Fair Employment Practices are: (1) Recruit and select on the basis of merit; (2) Treat employees fairly and with respect; (3) Provide employees with equal opportunity to be considered for training and development; (4) Reward employees fairly based on their ability, performance, contribution and experience; (5) Abide by labour laws and adopt the Tripartite Guidelines on Fair Employment Practices.",
+      "token_count": 91,
+      "source": "TAFEP",
+      "category": "workplace_fairness",
+      "region": "singapore",
+      "type": "pdf",
+      "title": "Tripartite Guidelines on Fair Employment Practices",
+      "url": "https://www.tal.sg/tafep/-/media/tal/tafep/getting-started/files/tripartite-guidelines.pdf",
+      "scraped_at": "2025-01-15T08:38:45",
+      "strategy": "recursive",
+      "parent_id": null,
+      "answer_type": "policy",
+      "role_relevance": "hr",
+      "topic_tags": [
+        "fair employment",
+        "merit-based hiring",
+        "equal opportunity"
+      ]
+    },
+    {
+      "chunk_id": "c3d4e5f6-a7b8-9c0d-1e2f-3a4b5c6d7e8f",
+      "text": "In 2023, there were 37 workplace fatalities in Singapore, a decrease from 40 in 2022. The fatal injury rate fell to 0.9 per 100,000 employed persons. The construction, marine, and manufacturing sectors accounted for the majority of fatalities. Falls from height remained the leading cause of fatal accidents, underscoring the need for continued vigilance in working-at-height safety measures.",
+      "token_count": 78,
+      "source": "MOM",
+      "category": "wsh_statistics",
+      "region": "singapore",
+      "type": "pdf",
+      "title": "WSH National Statistics Report 2024",
+      "url": "https://www.mom.gov.sg/-/media/mom/documents/safety-health/reports-stats/wsh-national-statistics/wsh-national-stats-2024.pdf",
+      "scraped_at": "2025-01-15T08:41:03",
+      "strategy": "recursive",
+      "parent_id": null,
+      "answer_type": "statistics",
+      "role_relevance": "all",
+      "topic_tags": [
+        "workplace fatalities",
+        "fatal injury rate",
+        "construction safety"
+      ]
+    },
+    {
+      "chunk_id": "d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a",
+      "text": "Managers play a critical role in identifying early signs of burnout in their teams. Warning signs include: persistent fatigue even after rest, reduced performance, increased cynicism or detachment from work, and frequent absences. When these signs are observed, managers should initiate a private, non-judgmental conversation with the employee, express genuine concern, and offer to connect them with professional support resources such as the Employee Assistance Programme (EAP).",
+      "token_count": 88,
+      "source": "WSH_Council",
+      "category": "mental_health",
+      "region": "singapore",
+      "type": "pdf",
+      "title": "Handbook on Supporting Employees Mental Health (Oct 2025)",
+      "url": "https://www.tal.sg/wshc/-/media/tal/wshc/resources/publications/guides-and-handbooks/files/handbook-on-supporting-employees-mental-health-20251022.pdf",
+      "scraped_at": "2025-01-15T08:44:17",
+      "strategy": "recursive",
+      "parent_id": null,
+      "answer_type": "guidance",
+      "role_relevance": "manager",
+      "topic_tags": [
+        "burnout",
+        "manager support",
+        "employee assistance programme"
+      ]
+    },
+    {
+      "chunk_id": "e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b",
+      "text": "The Samaritans of Singapore (SOS) operates a 24-hour crisis helpline at 1767 for individuals experiencing emotional distress or suicidal ideation. The service is free and confidential. SOS also runs the CareText service via WhatsApp for those who prefer text-based support. Employers are encouraged to prominently display these contact details in staff common areas and on internal HR portals to ensure all employees are aware of available crisis support.",
+      "token_count": 84,
+      "source": "SOS",
+      "category": "crisis_support",
+      "region": "singapore",
+      "type": "webpage",
+      "title": "SOS Crisis Support Services",
+      "url": "https://www.sos.org.sg/",
+      "scraped_at": "2025-01-15T08:47:55",
+      "strategy": "recursive",
+      "parent_id": null,
+      "answer_type": "guidance",
+      "role_relevance": "all",
+      "topic_tags": [
+        "crisis helpline",
+        "suicide prevention",
+        "SOS"
+      ]
+    },
+    {
+      "_comment": "Example of a parent_child strategy chunk — child has parent_id set and parent_text field",
+      "chunk_id": "f6a7b8c9-d0e1-2f3a-4b5c-6d7e8f9a0b1c",
+      "text": "Psychosocial risks arise from poor work design, organisation and management, as well as from a poor social context of work.",
+      "token_count": 28,
+      "source": "ILO",
+      "category": "stress_psychosocial",
+      "region": "international",
+      "type": "pdf",
+      "title": "Workplace Stress A Collective Challenge ILO 2016",
+      "url": "https://www.ilo.org/wcmsp5/groups/public/---ed_protect/---protrav/---safework/documents/publication/wcms_466547.pdf",
+      "scraped_at": "2025-01-15T08:51:12",
+      "strategy": "parent_child",
+      "parent_id": "a0b1c2d3-e4f5-6a7b-8c9d-0e1f2a3b4c5d",
+      "parent_text": "Psychosocial risks arise from poor work design, organisation and management, as well as from a poor social context of work. They may result in negative psychological, physical and social outcomes such as work-related stress, burnout or depression. Examples of psychosocial hazards include: excessive workloads, conflicting demands and lack of role clarity, lack of involvement in decisions that affect the worker, poor management of organisational change, job insecurity, ineffective communication, and lack of support from management or colleagues.",
+      "answer_type": "definition",
+      "role_relevance": "all",
+      "topic_tags": [
+        "psychosocial risks",
+        "work design",
+        "stress causes"
+      ]
+    }
+  ]
