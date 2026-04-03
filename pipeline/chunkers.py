@@ -5,6 +5,7 @@
 # pipeline (embedder, Qdrant upsert) requires zero changes.
  
 import uuid
+import hashlib
 import tiktoken
 from typing import Optional
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -12,7 +13,8 @@ from langchain_experimental.text_splitter import SemanticChunker
 from langchain_openai import OpenAIEmbeddings
  
 import sys
-sys.path.append("..")
+from pathlib import Path as _Path
+sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))
 import config
  
 enc = tiktoken.get_encoding("cl100k_base")
@@ -24,10 +26,21 @@ def _count_tokens(text: str) -> int:
     return len(enc.encode(text))
  
  
+def _stable_id(doc: dict, strategy: str, text: str) -> str:
+    """
+    Deterministic chunk ID derived from doc content_hash + strategy + text.
+    Same source text + same strategy always produces the same ID, so
+    re-running notebook 02 after adding new sources only upserts changed/new
+    chunks — it never creates duplicates of unchanged content.
+    """
+    key = f"{doc.get('content_hash', doc.get('url', ''))}-{strategy}-{text[:200]}"
+    return hashlib.sha256(key.encode()).hexdigest()
+
+
 def _make_chunk(text: str, doc: dict, strategy: str, parent_id: Optional[str] = None) -> dict:
     """Build a chunk dict that matches the existing clean_chunks.json schema."""
     return {
-        "chunk_id":      str(uuid.uuid4()),
+        "chunk_id":      _stable_id(doc, strategy, text),
         "text":          text,
         "token_count":   _count_tokens(text),
         "source":        doc.get("source"),
@@ -98,57 +111,139 @@ def chunk_semantic(corpus: list, openai_api_key: str) -> list:
     return _filter_short(chunks)
  
  
-# ── Strategy 3: Header-based (structure-aware) ────────────────────────────────
- 
-def chunk_header(corpus: list) -> list:
+# ── Strategy 3: Sentence-window chunking ─────────────────────────────────────
+
+def chunk_sentence_window(corpus: list, window_size: int = config.SENTENCE_WINDOW_SIZE) -> list:
     """
-    Splits on Markdown-style section headings (# / ## / ###).
-    Works best for your MOM/WSH policy docs which have clear section structure.
-    Falls back to recursive splitting for documents without headings.
- 
-    Your scraper already produces plain text, so this strategy first tries to
-    detect heading patterns (lines that are short, title-cased, and followed
-    by a blank line) and inserts # markers before splitting.
+    Each chunk is a single sentence stored as the retrieval unit, plus a
+    surrounding window of sentences stored as 'window_text' for the LLM.
+
+    Retrieval (embedding)  → precise: just the one sentence
+    LLM context            → rich:    window_size sentences before + sentence + window_size after
+
+    Typically outperforms parent_child on exact policy-rule Q&A because
+    embedding a single sentence is more focused than embedding a 400-token block.
+    No API calls required — zero extra cost.
     """
     import re
- 
-    def _inject_headings(text: str) -> str:
-        """Heuristically promote short all-caps or title-case lines to headings."""
-        lines = text.split("\n")
-        out   = []
-        for line in lines:
-            stripped = line.strip()
-            # Treat short (< 80 char), non-sentence lines as headings
-            if (
-                stripped
-                and len(stripped) < 80
-                and not stripped.endswith(".")
-                and (stripped.isupper() or stripped.istitle())
-            ):
-                out.append(f"## {stripped}")
-            else:
-                out.append(line)
-        return "\n".join(out)
- 
-    splitter = RecursiveCharacterTextSplitter(
-        chunk_size=config.CHUNK_SIZE,
-        chunk_overlap=config.CHUNK_OVERLAP,
-        length_function=_count_tokens,
-        separators=["\n## ", "\n# ", "\n\n", "\n", ". ", " ", ""],
-    )
- 
+
+    # Sentence boundary: split after . ! ? followed by whitespace
+    _SENT_RE = re.compile(r"(?<=[.!?])\s+")
+
     chunks = []
     for doc in corpus:
-        marked_text = _inject_headings(doc["full_text"])
-        texts = splitter.split_text(marked_text)
-        for t in texts:
-            # Strip the injected ## markers from the stored text
-            clean = re.sub(r"^##?\s+", "", t, flags=re.MULTILINE).strip()
-            chunks.append(_make_chunk(clean, doc, strategy="header"))
-    return _filter_short(chunks)
+        raw_sentences = _SENT_RE.split(doc["full_text"])
+        sentences = [s.strip() for s in raw_sentences if s.strip()]
+
+        for i, sentence in enumerate(sentences):
+            if len(sentence) < config.MIN_CHUNK_CHARS:
+                continue
+
+            start = max(0, i - window_size)
+            end   = min(len(sentences), i + window_size + 1)
+            window_text = " ".join(sentences[start:end])
+
+            chunk = _make_chunk(sentence, doc, strategy="sentence_window")
+            chunk["window_text"] = window_text
+            chunk["window_size"] = window_size
+            chunks.append(chunk)
+
+    return chunks
+
+
+# ── Strategy 4: Proposition chunking ─────────────────────────────────────────
+
+_PROPOSITION_SYSTEM = """\
+You are a precise text analyser. Given a passage, extract ALL atomic propositions from it.
+
+An atomic proposition is:
+  - A single, self-contained declarative statement
+  - Contains exactly one fact, rule, number, or claim
+  - Understandable without reading the surrounding text
+  - Written as a complete sentence in the same language as the passage
+
+Return ONLY valid JSON in this exact format (no markdown):
+{"propositions": ["proposition 1", "proposition 2", "..."]}"""
+
+
+def chunk_proposition(
+    corpus: list,
+    openai_api_key: str,
+    base_chunk_size: int = 512,
+) -> list:
+    """
+    LLM-based atomic proposition extraction.
+
+    Pipeline:
+      1. Split each document into passages using recursive splitting
+      2. For each passage, call the LLM to extract atomic propositions
+      3. Each proposition becomes its own chunk, with 'source_passage' stored
+         as context for the LLM at query time
+
+    Trade-off: highest retrieval precision of all strategies, but costs
+    roughly 1 LLM call per ~512-token passage. Run after recursive to
+    validate the pipeline first.
+
+    Requires openai_api_key.
+    """
+    import json
+    import time
+    from openai import OpenAI
+
+    oai = OpenAI(api_key=openai_api_key)
+
+    passage_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=base_chunk_size,
+        chunk_overlap=50,
+        length_function=_count_tokens,
+        separators=["\n\n", "\n", ". ", " ", ""],
+    )
+
+    chunks = []
+    for doc in corpus:
+        passages = passage_splitter.split_text(doc["full_text"])
+
+        for passage in passages:
+            if len(passage) < config.MIN_CHUNK_CHARS:
+                continue
+
+            try:
+                response = oai.chat.completions.create(
+                    model=config.LLM_MODEL,
+                    temperature=0,
+                    messages=[
+                        {"role": "system", "content": _PROPOSITION_SYSTEM},
+                        {"role": "user",   "content": f"Extract propositions:\n\n{passage}"},
+                    ],
+                    response_format={"type": "json_object"},
+                )
+                raw  = response.choices[0].message.content.strip()
+                data = json.loads(raw)
+
+                # Accept {"propositions": [...]} or any single-key dict wrapping a list
+                if isinstance(data, dict):
+                    propositions = data.get("propositions") or next(
+                        (v for v in data.values() if isinstance(v, list)), []
+                    )
+                else:
+                    propositions = data
+
+                for prop in propositions:
+                    prop = prop.strip() if isinstance(prop, str) else ""
+                    if len(prop) < 20:
+                        continue
+                    chunk = _make_chunk(prop, doc, strategy="proposition")
+                    chunk["source_passage"] = passage   # richer context for the LLM
+                    chunks.append(chunk)
+
+                time.sleep(0.2)   # stay well within rate limits
+
+            except Exception as exc:
+                print(f"  [warn] proposition extraction failed — falling back to passage: {exc}")
+                chunks.append(_make_chunk(passage, doc, strategy="proposition"))
  
  
-# ── Strategy 4: Parent-child chunking ────────────────────────────────────────
+# ── Strategy 5: Parent-child chunking ────────────────────────────────────────
  
 def chunk_parent_child(corpus: list) -> list:
     """
@@ -203,25 +298,32 @@ def chunk_parent_child(corpus: list) -> list:
  
  
 # ── Dispatcher ────────────────────────────────────────────────────────────────
- 
+
 def get_chunks(strategy: str, corpus: list, openai_api_key: str = None) -> list:
     """
     Main entry point. Call this from notebooks.
- 
+
     Usage:
         from pipeline.chunkers import get_chunks
-        chunks = get_chunks("recursive", corpus)
-        chunks = get_chunks("semantic",  corpus, openai_api_key=OPENAI_API_KEY)
+        chunks = get_chunks("recursive",        corpus)
+        chunks = get_chunks("semantic",         corpus, openai_api_key=OPENAI_API_KEY)
+        chunks = get_chunks("sentence_window",  corpus)
+        chunks = get_chunks("parent_child",     corpus)
+        chunks = get_chunks("proposition",      corpus, openai_api_key=OPENAI_API_KEY)
     """
+    needs_key = ("semantic", "proposition")
+    if strategy in needs_key and not openai_api_key:
+        raise ValueError(f"'{strategy}' chunking requires openai_api_key")
+
     if strategy == "recursive":
         return chunk_recursive(corpus)
     elif strategy == "semantic":
-        if not openai_api_key:
-            raise ValueError("semantic chunking requires openai_api_key")
         return chunk_semantic(corpus, openai_api_key)
-    elif strategy == "header":
-        return chunk_header(corpus)
+    elif strategy == "sentence_window":
+        return chunk_sentence_window(corpus)
     elif strategy == "parent_child":
         return chunk_parent_child(corpus)
+    elif strategy == "proposition":
+        return chunk_proposition(corpus, openai_api_key)
     else:
         raise ValueError(f"Unknown strategy '{strategy}'. Choose from: {config.CHUNKING_STRATEGIES}")

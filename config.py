@@ -10,16 +10,17 @@ RERANK_MODEL    = "cross-encoder/ms-marco-MiniLM-L-6-v2"
  
 # ── Qdrant ────────────────────────────────────────────────────────────────────
 # One collection per chunking strategy.
-# e.g. hr_rag_recursive, hr_rag_semantic, hr_rag_header, hr_rag_parent_child
+# e.g. hr_rag_recursive, hr_rag_semantic, hr_rag_sentence_window, hr_rag_parent_child, hr_rag_proposition
 COLLECTION_PREFIX = "hr_rag"
  
 # ── Chunking ──────────────────────────────────────────────────────────────────
-CHUNKING_STRATEGIES = ["recursive", "semantic", "header", "parent_child"]
- 
-CHUNK_SIZE        = 400   # tokens (used by recursive + parent_child)
-CHUNK_OVERLAP     = 60
-MIN_CHUNK_CHARS   = 150
-PARENT_CHUNK_SIZE = 1200  # larger parent chunk for parent_child strategy
+CHUNKING_STRATEGIES = ["recursive", "semantic", "sentence_window", "parent_child", "proposition"]
+
+CHUNK_SIZE           = 400    # tokens (recursive, parent_child child, proposition base passages)
+CHUNK_OVERLAP        = 60
+MIN_CHUNK_CHARS      = 150
+PARENT_CHUNK_SIZE    = 1200   # larger parent chunk for parent_child strategy
+SENTENCE_WINDOW_SIZE = 3      # sentences before + after for sentence_window strategy
  
 # ── Retrieval ─────────────────────────────────────────────────────────────────
 RETRIEVAL_STRATEGIES = ["dense", "hybrid", "multi_query", "compression"]
@@ -34,13 +35,17 @@ EMBED_BATCH_SIZE = 100
 GT_PAIRS    = 50
 RANDOM_SEED = 42
  
-# ── Paths (Google Drive) ──────────────────────────────────────────────────────
-DRIVE_BASE       = "/content/drive/MyDrive/hr_wellness_rag"
-CORPUS_PATH      = f"{DRIVE_BASE}/scraped_corpus.json"
-CLEAN_CHUNKS_DIR = f"{DRIVE_BASE}/chunks"   # one file per strategy, e.g. chunks/recursive.json
-EMBEDDINGS_DIR   = f"{DRIVE_BASE}/embeddings"
-GT_PAIRS_PATH    = f"{DRIVE_BASE}/gt_pairs.json"
-RESULTS_PATH     = f"{DRIVE_BASE}/results/eval_results.csv"
+# ── Paths ─────────────────────────────────────────────────────────────────────
+from pathlib import Path as _Path
+
+_ROOT            = _Path(__file__).parent
+SOURCES_PATH     = str(_ROOT / "data" / "sources.json")          # URL manifest (committed)
+CORPUS_PATH      = str(_ROOT / "data" / "scraped_corpus.json")   # scraped text (git-ignored)
+CLEAN_CHUNKS_DIR = str(_ROOT / "data" / "chunks")                # one JSON per strategy
+EMBEDDINGS_DIR   = str(_ROOT / "data" / "embeddings")            # embedding cache per strategy
+DOWNLOADS_DIR    = str(_ROOT / "data" / "downloads")             # raw PDF downloads
+GT_PAIRS_PATH    = str(_ROOT / "data" / "gt_pairs.json")
+RESULTS_PATH     = str(_ROOT / "results" / "eval_results.csv")
  
 # ── Filterable metadata fields ────────────────────────────────────────────────
 INDEXED_FIELDS = ["source", "category", "region", "role_relevance", "answer_type"]

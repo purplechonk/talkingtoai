@@ -15,7 +15,8 @@ from qdrant_client.models import (
 from fastembed import SparseTextEmbedding
  
 import sys
-sys.path.append("..")
+from pathlib import Path as _Path
+sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))
 import config
  
  
@@ -252,7 +253,10 @@ def upsert_chunks(
                 "topic_tags":     chunk.get("topic_tags", []),
                 "strategy":       chunk.get("strategy"),
                 "parent_id":      chunk.get("parent_id"),
-                "parent_text":    chunk.get("parent_text"),  # None for non-parent_child
+                "parent_text":    chunk.get("parent_text"),    # parent_child strategy
+                "window_text":    chunk.get("window_text"),    # sentence_window strategy
+                "window_size":    chunk.get("window_size"),    # sentence_window strategy
+                "source_passage": chunk.get("source_passage"), # proposition strategy
             }
  
             points.append(PointStruct(

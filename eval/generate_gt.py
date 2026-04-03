@@ -10,7 +10,8 @@ from openai import OpenAI
 from qdrant_client import QdrantClient
  
 import sys
-sys.path.append("..")
+from pathlib import Path as _Path
+sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))
 import config
  
 ANSWER_TYPE_HINTS = {

@@ -16,7 +16,8 @@ from langchain.retrievers import MultiQueryRetriever, ContextualCompressionRetri
 from langchain.retrievers.document_compressors import LLMChainExtractor
  
 import sys
-sys.path.append("..")
+from pathlib import Path as _Path
+sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))
 import config
  
  
@@ -64,8 +65,17 @@ def _format_results(results: list, search_mode: str, query: str,
             "topic_tags":     p.get("topic_tags", []),
             "url":            p.get("url"),
             "text":           p.get("text"),
-            # For parent_child: use the parent text for LLM context if available
-            "context_text":   p.get("parent_text") or p.get("text"),
+            # Context priority:
+            #   parent_child  → parent_text  (large parent passage)
+            #   sentence_window → window_text (surrounding sentences)
+            #   proposition   → source_passage (original passage the proposition came from)
+            #   all others    → text itself
+            "context_text":   (
+                p.get("parent_text")
+                or p.get("window_text")
+                or p.get("source_passage")
+                or p.get("text")
+            ),
         })
     return {
         "query":            query,

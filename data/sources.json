@@ -1,0 +1,499 @@
+{
+  "_comment": "Master source list for the HR Wellness RAG project. Scraped by notebooks/01_scraping.ipynb. Do NOT commit scraped_corpus.json or clean_chunks.json — see .gitignore.",
+  "_stats": {
+    "pdf_sources": 36,
+    "crawl_sources": 33,
+    "total_sources": 69
+  },
+  "pdf_sources": [
+    {
+      "url": "https://www.mom.gov.sg/-/media/mom/documents/covid-19/advisories/tripartite-advisory-on-mental-well-being-at-workplaces.pdf",
+      "source": "MOM",
+      "category": "mental_health",
+      "region": "singapore",
+      "title": "Tripartite Advisory on Mental Health and Well-Being at Workplaces"
+    },
+    {
+      "url": "https://www.mom.gov.sg/-/media/mom/documents/speeches/2023/media-fact-sheet-on-implementation-of-workplace-mental-well-being-strategies.pdf",
+      "source": "MOM",
+      "category": "mental_health",
+      "region": "singapore",
+      "title": "Media Fact Sheet: Workplace Mental Well-being Strategies 2023"
+    },
+    {
+      "url": "https://www.mom.gov.sg/-/media/mom/documents/safety-health/tripartite-guide-fitness-for-work.pdf",
+      "source": "MOM",
+      "category": "mental_health",
+      "region": "singapore",
+      "title": "Tripartite Guide: Fitness for Work"
+    },
+    {
+      "url": "https://www.mom.gov.sg/-/media/mom/documents/press-releases/2024/tripartite-guidelines-on-flexible-work-arrangement-requests.pdf",
+      "source": "MOM",
+      "category": "flexible_work",
+      "region": "singapore",
+      "title": "Tripartite Guidelines on Flexible Work Arrangement Requests (TG-FWAR)"
+    },
+    {
+      "url": "https://www.mom.gov.sg/-/media/mom/documents/employment-practices/public-faqs-on-tgfwar-for-website.pdf",
+      "source": "MOM",
+      "category": "flexible_work",
+      "region": "singapore",
+      "title": "FAQs on TG-FWAR"
+    },
+    {
+      "url": "https://www.mom.gov.sg/-/media/mom/documents/employment-practices/guidelines/tripartite-advisory-on-managing-excess-manpower-and-responsible-retrenchment.pdf",
+      "source": "MOM",
+      "category": "employment_practices",
+      "region": "singapore",
+      "title": "Tripartite Advisory on Managing Excess Manpower and Responsible Retrenchment"
+    },
+    {
+      "url": "https://www.mom.gov.sg/-/media/mom/documents/employment-practices/guidelines/tripartite-advisory-on-managing-workplace-harassment.pdf",
+      "source": "MOM",
+      "category": "harassment",
+      "region": "singapore",
+      "title": "Tripartite Advisory on Managing Workplace Harassment"
+    },
+    {
+      "url": "https://www.tal.sg/tafep/-/media/tal/tafep/getting-started/files/tripartite-guidelines.pdf",
+      "source": "TAFEP",
+      "category": "workplace_fairness",
+      "region": "singapore",
+      "title": "Tripartite Guidelines on Fair Employment Practices"
+    },
+    {
+      "url": "https://www.mom.gov.sg/-/media/mom/documents/press-releases/2023/tripartite-committee-on-workplace-fairness-final-report.pdf",
+      "source": "MOM",
+      "category": "workplace_fairness",
+      "region": "singapore",
+      "title": "Tripartite Committee on Workplace Fairness Final Report 2023"
+    },
+    {
+      "url": "https://www.mom.gov.sg/-/media/mom/documents/safety-health/reports-stats/wsh-national-statistics/wsh-national-stats-2024.pdf",
+      "source": "MOM",
+      "category": "wsh_statistics",
+      "region": "singapore",
+      "title": "WSH National Statistics Report 2024"
+    },
+    {
+      "url": "https://www.mom.gov.sg/-/media/mom/documents/safety-health/reports-stats/wsh-national-statistics/wsh-report-2025.pdf",
+      "source": "MOM",
+      "category": "wsh_statistics",
+      "region": "singapore",
+      "title": "WSH Report January-June 2025"
+    },
+    {
+      "url": "https://www.tal.sg/wshc/-/media/tal/wshc/resources/publications/guides-and-handbooks/files/handbook-on-supporting-employees-mental-health-20251022.pdf",
+      "source": "WSH_Council",
+      "category": "mental_health",
+      "region": "singapore",
+      "title": "Handbook on Supporting Employees Mental Health (Oct 2025)"
+    },
+    {
+      "url": "https://isomer-user-content.by.gov.sg/3/c60453c6-3290-42c4-8e0d-97f1b0f87a29/national-mental-health-and-well-being-strategy-report-(final).pdf",
+      "source": "MOH",
+      "category": "mental_health",
+      "region": "singapore",
+      "title": "National Mental Health and Well-being Strategy Full Report 2023"
+    },
+    {
+      "url": "https://isomer-user-content.by.gov.sg/3/15393410-a42b-45a8-af5f-e432e2e4342a/national-mental-health-and-well-being-strategy-report-2023.pdf",
+      "source": "MOH",
+      "category": "mental_health",
+      "region": "singapore",
+      "title": "National Mental Health and Well-being Strategy Summary 2023"
+    },
+    {
+      "url": "https://isomer-user-content.by.gov.sg/24/33d35d3a-57c7-4e41-8044-881054bf4587/Beyond-the-Label-Media-Guide.pdf",
+      "source": "NCSS",
+      "category": "mental_health",
+      "region": "singapore",
+      "title": "Beyond the Label Media Guide"
+    },
+    {
+      "url": "https://www.hpb.gov.sg/docs/default-source/default-document-library/01-programme-orientation-(understanding-workplace-health-promotion).pdf?sfvrsn=18ceeb72_0",
+      "source": "HPB",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "title": "HPB WHP Toolkit 1: Understanding Workplace Health Promotion"
+    },
+    {
+      "url": "https://www.hpb.gov.sg/docs/default-source/default-document-library/02-programme-stages-(benchmarking-workplace-health-promotion-programme).pdf?sfvrsn=16ceeb72_0",
+      "source": "HPB",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "title": "HPB WHP Toolkit 2: Benchmarking WHP Programme"
+    },
+    {
+      "url": "https://www.hpb.gov.sg/docs/default-source/default-document-library/03-programme-positioning-(securing-management-support).pdf?sfvrsn=9fd2eb72_0",
+      "source": "HPB",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "title": "HPB WHP Toolkit 3: Securing Management Support"
+    },
+    {
+      "url": "https://www.hpb.gov.sg/docs/default-source/default-document-library/04-programme-organisation-(setting-up-committee-structures).pdf?sfvrsn=8dd2eb72_0",
+      "source": "HPB",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "title": "HPB WHP Toolkit 4: Setting Up Committee Structures"
+    },
+    {
+      "url": "https://www.hpb.gov.sg/docs/default-source/default-document-library/05a-programme-design-(uncovering-true-health-needs)56518df6468366dea7adff00000d8c5a.pdf?sfvrsn=e8d2eb72_0",
+      "source": "HPB",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "title": "HPB WHP Toolkit 5a: Uncovering True Health Needs"
+    },
+    {
+      "url": "https://www.hpb.gov.sg/docs/default-source/default-document-library/05b-programme-design-(choosing-interventions-that-work).pdf?sfvrsn=e6d2eb72_0",
+      "source": "HPB",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "title": "HPB WHP Toolkit 5b: Choosing Interventions That Work"
+    },
+    {
+      "url": "https://www.hpb.gov.sg/docs/default-source/default-document-library/05c-programme-design-(writing-a-programme-plan).pdf?sfvrsn=d4d2eb72_0",
+      "source": "HPB",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "title": "HPB WHP Toolkit 5c: Writing a Programme Plan"
+    },
+    {
+      "url": "https://www.hpb.gov.sg/docs/default-source/default-document-library/06-marketing-your-programme-(maximising-participation).pdf?sfvrsn=c2d2eb72_0",
+      "source": "HPB",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "title": "HPB WHP Toolkit 6: Maximising Participation"
+    },
+    {
+      "url": "https://www.hpb.gov.sg/docs/default-source/default-document-library/07-programme-implementation-(addressing-faqs-on-practical-issues).pdf?sfvrsn=30d2eb72_0",
+      "source": "HPB",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "title": "HPB WHP Toolkit 7: Programme Implementation FAQs"
+    },
+    {
+      "url": "https://www.hpb.gov.sg/docs/default-source/default-document-library/08-programme-implementation-(addressing-faqs-on-practical-issues).pdf?sfvrsn=2ed2eb72_0",
+      "source": "HPB",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "title": "HPB WHP Toolkit 8: Programme Evaluation"
+    },
+    {
+      "url": "https://www.hpb.gov.sg/docs/default-source/default-document-library/0-workplace-alliance-for-health-funding-guidelines.pdf?sfvrsn=9fd2c672_2",
+      "source": "HPB",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "title": "Workplace Alliance for Health WAH Scheme Funding Guidelines"
+    },
+    {
+      "url": "https://www.hpb.gov.sg/docs/default-source/pdf/nphs-2024-survey-report.pdf",
+      "source": "HPB",
+      "category": "health_data",
+      "region": "singapore",
+      "title": "National Population Health Survey 2024"
+    },
+    {
+      "url": "https://www.activesgcircle.gov.sg/hubfs/SPAG/SPAG%20Guidebook_Revised%20Edition%202022.pdf",
+      "source": "HPB",
+      "category": "physical_wellness",
+      "region": "singapore",
+      "title": "Singapore Physical Activity Guidelines 2022"
+    },
+    {
+      "url": "https://iris.who.int/bitstream/handle/10665/363084/9789240053052-eng.pdf",
+      "source": "WHO",
+      "category": "mental_health",
+      "region": "international",
+      "title": "WHO Guidelines on Mental Health at Work 2022"
+    },
+    {
+      "url": "https://iris.who.int/bitstream/handle/10665/363080/9789240057944-eng.pdf",
+      "source": "WHO_ILO",
+      "category": "mental_health",
+      "region": "international",
+      "title": "Mental Health at Work WHO ILO Policy Brief 2022"
+    },
+    {
+      "url": "https://www.ilo.org/wcmsp5/groups/public/---ed_protect/---protrav/---safework/documents/publication/wcms_466547.pdf",
+      "source": "ILO",
+      "category": "stress_psychosocial",
+      "region": "international",
+      "title": "Workplace Stress A Collective Challenge ILO 2016"
+    },
+    {
+      "url": "https://www.ilo.org/media/43291/download",
+      "source": "ILO",
+      "category": "stress_psychosocial",
+      "region": "international",
+      "title": "ILO Psychosocial Risks and Work-Related Stress"
+    },
+    {
+      "url": "https://www.mind.org.uk/media-a/4660/mental-health-at-work-1_tcm18-10567.pdf",
+      "source": "CIPD_Mind",
+      "category": "mental_health",
+      "region": "international",
+      "title": "People Managers Guide to Mental Health at Work CIPD Mind"
+    },
+    {
+      "url": "https://file.for.sg/sghwellbeingplaybook.pdf",
+      "source": "SGH",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "title": "SGH Well-being Playbook"
+    },
+    {
+      "url": "https://infopedia.shs.com.sg/SGH/SPECIAL/SGH-Well-Being-at-Work/Documents/STAFF%20WELLNESS%20ENCLAVES.pdf_safe.pdf",
+      "source": "SGH",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "title": "SGH Staff Wellness Enclaves Guide"
+    },
+    {
+      "url": "https://infopedia.shs.com.sg/SGH/SPECIAL/SGH-Well-Being-at-Work/Documents/Application%20Guide%20-%20Corporate%20Pass%20(via%20People%20Connexion).pdf_safe.pdf",
+      "source": "SGH",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "title": "SGH Corporate Pass Application Guide (People Connexion)"
+    }
+  ],
+  "crawl_sources": [
+    {
+      "seed_url": "https://www.mom.gov.sg/employment-practices/tripartism-in-singapore/tripartite-guidelines-and-advisories",
+      "source": "MOM",
+      "category": "policy",
+      "region": "singapore",
+      "max_pages": 25
+    },
+    {
+      "seed_url": "https://www.mom.gov.sg/employment-practices/good-work-practices/flexible-work-arrangements",
+      "source": "MOM",
+      "category": "flexible_work",
+      "region": "singapore",
+      "max_pages": 15
+    },
+    {
+      "seed_url": "https://www.mom.gov.sg/workplace-safety-and-health/wsh-reports-and-statistics",
+      "source": "MOM",
+      "category": "wsh_statistics",
+      "region": "singapore",
+      "max_pages": 15
+    },
+    {
+      "seed_url": "https://www.tal.sg/wshc/topics/mental-well-being",
+      "source": "WSH_Council",
+      "category": "mental_health",
+      "region": "singapore",
+      "max_pages": 20
+    },
+    {
+      "seed_url": "https://www.tal.sg/tafep/getting-started/progressive/tripartite-standards",
+      "source": "TAFEP",
+      "category": "workplace_fairness",
+      "region": "singapore",
+      "max_pages": 15
+    },
+    {
+      "seed_url": "https://www.moh.gov.sg/others/resources-and-statistics/national-mental-health-and-well-being-strategy--2023-/",
+      "source": "MOH",
+      "category": "mental_health",
+      "region": "singapore",
+      "max_pages": 15
+    },
+    {
+      "seed_url": "https://www.ncss.gov.sg/our-initiatives/beyond-the-label/resources",
+      "source": "NCSS",
+      "category": "mental_health",
+      "region": "singapore",
+      "max_pages": 25
+    },
+    {
+      "seed_url": "https://www.hpb.gov.sg/workplace",
+      "source": "HPB",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "max_pages": 30
+    },
+    {
+      "seed_url": "https://www.hpb.gov.sg/healthy-living/mental-wellbeing",
+      "source": "HPB",
+      "category": "mental_health",
+      "region": "singapore",
+      "max_pages": 20
+    },
+    {
+      "seed_url": "https://www.silverribbonsingapore.com/",
+      "source": "Silver_Ribbon",
+      "category": "mental_health",
+      "region": "singapore",
+      "max_pages": 30
+    },
+    {
+      "seed_url": "https://www.aware.org.sg/training/wsh-site/",
+      "source": "AWARE",
+      "category": "harassment",
+      "region": "singapore",
+      "max_pages": 20
+    },
+    {
+      "seed_url": "https://www.aware.org.sg/information/",
+      "source": "AWARE",
+      "category": "harassment",
+      "region": "singapore",
+      "max_pages": 20
+    },
+    {
+      "seed_url": "https://www.sos.org.sg/",
+      "source": "SOS",
+      "category": "crisis_support",
+      "region": "singapore",
+      "max_pages": 20
+    },
+    {
+      "seed_url": "https://www.cipd.org/en/knowledge/guides/mental-health-support-guide/",
+      "source": "CIPD",
+      "category": "mental_health",
+      "region": "international",
+      "max_pages": 40
+    },
+    {
+      "seed_url": "https://www.mind.org.uk/workplace/mental-health-at-work/",
+      "source": "Mind_UK",
+      "category": "mental_health",
+      "region": "international",
+      "max_pages": 30
+    },
+    {
+      "seed_url": "https://www.shrm.org/topics-tools/topics/mental-health",
+      "source": "SHRM",
+      "category": "mental_health",
+      "region": "international",
+      "max_pages": 30
+    },
+    {
+      "seed_url": "https://for.sg/SGHHealthAtWork",
+      "source": "SGH",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "max_pages": 15,
+      "_note": "May require SingHealth network access"
+    },
+    {
+      "seed_url": "https://for.sg/SGHKindnessAtWork",
+      "source": "SGH",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "max_pages": 10,
+      "_note": "May require SingHealth network access"
+    },
+    {
+      "seed_url": "https://for.sg/SGHFamilyAtWork",
+      "source": "SGH",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "max_pages": 10,
+      "_note": "May require SingHealth network access"
+    },
+    {
+      "seed_url": "https://for.sg/SGHTransformationsAtWork",
+      "source": "SGH",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "max_pages": 10,
+      "_note": "May require SingHealth network access"
+    },
+    {
+      "seed_url": "https://infopedia.shs.com.sg/SGH/SPECIAL/SGH-Well-Being-at-Work/Pages/Well-Being-Best-Practice-Learning-Series.aspx",
+      "source": "SGH",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "max_pages": 25
+    },
+    {
+      "seed_url": "https://infopedia.shs.com.sg/SGH/Departments/worklife/Archive/Pages/Get-Healthy-@-Work-.aspx",
+      "source": "SGH",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "max_pages": 20
+    },
+    {
+      "seed_url": "https://infopedia.shs.com.sg/SGH/Departments/Learning-and-Career-Development/Pages/Welcome.aspx",
+      "source": "SGH",
+      "category": "employment_practices",
+      "region": "singapore",
+      "max_pages": 20
+    },
+    {
+      "seed_url": "https://infopedia.shs.com.sg/SGH/Departments/OPE/Pages/Service-with-a-Heart-Award.aspx",
+      "source": "SGH",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "max_pages": 10
+    },
+    {
+      "seed_url": "https://infopedia.shs.com.sg/SingHealth/WS/Pages/SingHealth-Staff-Amenities.aspx",
+      "source": "SingHealth",
+      "category": "workplace_wellness",
+      "region": "singapore",
+      "max_pages": 15
+    },
+    {
+      "seed_url": "https://infopedia.shs.com.sg/SingHealth/Groups/SingHealth%20Staff%20Wellness%20Office/Pages/Press-Pause%20(Disconnect%20to%20Reconnect).aspx",
+      "source": "SingHealth",
+      "category": "mental_health",
+      "region": "singapore",
+      "max_pages": 20
+    },
+    {
+      "seed_url": "https://infopedia.shs.com.sg/SingHealth/Groups/SingHealth%20Staff%20Wellness%20Office/Pages/It%27s-in-the-little-things.aspx",
+      "source": "SingHealth",
+      "category": "mental_health",
+      "region": "singapore",
+      "max_pages": 20
+    },
+    {
+      "seed_url": "https://infopedia.shs.com.sg/SingHealth/Pages/Protecting%20You%20From%20Abuse%20and%20Harassment%20by%20Patients%20and%20Caregivers/How-do-I-know-if-I-am-abused.aspx",
+      "source": "SingHealth",
+      "category": "harassment",
+      "region": "singapore",
+      "max_pages": 15
+    },
+    {
+      "seed_url": "https://www.healthhub.sg/programmes/nutrition-hub/eat-more",
+      "source": "HPB",
+      "category": "physical_wellness",
+      "region": "singapore",
+      "max_pages": 20
+    },
+    {
+      "seed_url": "https://www.healthxchange.sg/wellness/health-work/work-related-musculoskeletal-disorders-code-practice-office-ergonomics",
+      "source": "SingHealth_HealthXchange",
+      "category": "physical_wellness",
+      "region": "singapore",
+      "max_pages": 1
+    },
+    {
+      "seed_url": "https://hbr.org/2024/01/how-to-sustain-your-empathy-in-difficult-times",
+      "source": "HBR",
+      "category": "mental_health",
+      "region": "international",
+      "max_pages": 1
+    },
+    {
+      "seed_url": "https://www.greatplacetowork.com/resources/blog/5-languages-of-appreciation-in-the-workplace",
+      "source": "Great_Place_To_Work",
+      "category": "workplace_wellness",
+      "region": "international",
+      "max_pages": 1
+    },
+    {
+      "seed_url": "https://www.ihi.org/resources/tools/psychological-ppe-promote-health-care-workforce-mental-health-and-well-being",
+      "source": "IHI",
+      "category": "mental_health",
+      "region": "international",
+      "max_pages": 5
+    }
+  ]
+}
