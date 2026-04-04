@@ -46,6 +46,8 @@ EMBEDDINGS_DIR   = str(_ROOT / "data" / "embeddings")            # embedding cac
 DOWNLOADS_DIR    = str(_ROOT / "data" / "downloads")             # raw PDF downloads
 GT_PAIRS_PATH    = str(_ROOT / "data" / "gt_pairs.json")
 RESULTS_PATH     = str(_ROOT / "results" / "eval_results.csv")
+CHUNK_EVAL_PATH  = str(_ROOT / "results" / "chunk_eval_results.csv")
+SYNTH_QUERIES_DIR = str(_ROOT / "data" / "synth_queries")
  
 # ── Filterable metadata fields ────────────────────────────────────────────────
 INDEXED_FIELDS = ["source", "category", "region", "role_relevance", "answer_type"]

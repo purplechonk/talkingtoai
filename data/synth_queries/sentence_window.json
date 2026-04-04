@@ -1,0 +1,602 @@
+[
+  {
+    "question": "What is the significance of selection interviews in the recruitment process according to the Tripartite Guidelines on Fair Employment Practices?",
+    "chunk_id": "cbb02b55-35ec-5522-0aa3-62d2d6eb5a32",
+    "category": "workplace_fairness",
+    "source": "TAFEP"
+  },
+  {
+    "question": "What reason did the company give for retracting the job offer to the pregnant employee?",
+    "chunk_id": "24e36358-d1cd-08eb-17ae-0f18ea5f912a",
+    "category": "workplace_fairness",
+    "source": "MOM"
+  },
+  {
+    "question": "What is TAFEP and what other agencies is it associated with?",
+    "chunk_id": "09b77fe2-6ec2-c9d9-1e77-036e2b47cfaf",
+    "category": "workplace_fairness",
+    "source": "TAFEP"
+  },
+  {
+    "question": "What are employers required to implement regarding grievance handling according to the TGFEP?",
+    "chunk_id": "e2f9c2e7-aeed-813b-e7be-6c323c481af6",
+    "category": "workplace_fairness",
+    "source": "MOM"
+  },
+  {
+    "question": "What guidelines do the Ministry of Manpower and the Tripartite Alliance refer to when handling complaints about unfair employment practices?",
+    "chunk_id": "561bac0d-4286-0965-85d4-17309fd88a7d",
+    "category": "workplace_fairness",
+    "source": "TAFEP"
+  },
+  {
+    "question": "Can religious organisations make employment decisions based on the religion of candidates?",
+    "chunk_id": "4fea83ba-b6ea-5fc1-cddf-01625d47f45e",
+    "category": "workplace_fairness",
+    "source": "MOM"
+  },
+  {
+    "question": "What should employers consider when supporting causes unrelated to their business at the workplace?",
+    "chunk_id": "4a00396e-b5b9-5ff4-8b4a-2f8a9642cf92",
+    "category": "workplace_fairness",
+    "source": "TAFEP"
+  },
+  {
+    "question": "What does the report suggest about the effectiveness of suspending work pass privileges as a deterrent for employers?",
+    "chunk_id": "2ddda2fa-3bd5-187d-cc40-466da8cd062c",
+    "category": "workplace_fairness",
+    "source": "MOM"
+  },
+  {
+    "question": "How can employers create a benefits package that is both competitive and fair for their employees?",
+    "chunk_id": "e2758ed7-6a31-364a-c1a8-3a574122eaba",
+    "category": "workplace_fairness",
+    "source": "MOM"
+  },
+  {
+    "question": "What are the symptoms of serious dehydration?",
+    "chunk_id": "228a8888-2347-c22b-5567-d0e82ff83448",
+    "category": "physical_wellness",
+    "source": "HPB"
+  },
+  {
+    "question": "Is the information provided in the text a substitute for professional medical advice?",
+    "chunk_id": "bcc8989b-94aa-f497-65c3-2be680bc2f99",
+    "category": "physical_wellness",
+    "source": "HPB"
+  },
+  {
+    "question": "How can physical activity after childbirth impact musculoskeletal recovery?",
+    "chunk_id": "ccacae5e-e2bd-6d53-24c2-3ea0a3b69557",
+    "category": "physical_wellness",
+    "source": "HPB"
+  },
+  {
+    "question": "How does physical activity impact brain health and mental function?",
+    "chunk_id": "f3f13f2e-c114-939f-a9ad-16ca1b5f7357",
+    "category": "physical_wellness",
+    "source": "HPB"
+  },
+  {
+    "question": "What should I consider when starting a new physical activity according to the Singapore Physical Activity Guidelines 2022?",
+    "chunk_id": "9d0a06e7-e05f-9368-5cf3-6f90a9ba912f",
+    "category": "physical_wellness",
+    "source": "HPB"
+  },
+  {
+    "question": "How often does Javen participate in structured leisure-time physical activity?",
+    "chunk_id": "1f2e8c7f-8f34-19fb-b471-21c6b054b8b1",
+    "category": "physical_wellness",
+    "source": "HPB"
+  },
+  {
+    "question": "What is the minimum amount of calories one needs to burn daily through physical activity to improve walking limitations and performance-based functional ability?",
+    "chunk_id": "a8cc4721-c320-192a-ec0b-85e442a584a0",
+    "category": "physical_wellness",
+    "source": "HPB"
+  },
+  {
+    "question": "What are some considerations for a working mother with young children regarding her physical wellness?",
+    "chunk_id": "7d4d4cc7-63b0-ae20-97ff-35d4b5760468",
+    "category": "physical_wellness",
+    "source": "HPB"
+  },
+  {
+    "question": "What should I do if I am unsure of my resting blood pressure?",
+    "chunk_id": "0d759d49-dd3e-577f-184d-0ec056ad15e8",
+    "category": "physical_wellness",
+    "source": "HPB"
+  },
+  {
+    "question": "Who are the key community members that can help support mental well-being during times of distress?",
+    "chunk_id": "07cf8bc7-d03f-57c4-b372-fd7a1a65f2c3",
+    "category": "mental_health",
+    "source": "MOH"
+  },
+  {
+    "question": "How can employers support individuals affected by mental health issues in gaining employment?",
+    "chunk_id": "191422be-8dab-a675-59d3-912899b89092",
+    "category": "mental_health",
+    "source": "MOH"
+  },
+  {
+    "question": "What initiative has been raising public awareness and acceptance of individuals with mental health conditions since 2018?",
+    "chunk_id": "3a1c2f5f-4775-4b70-ba32-bfbc5236a20f",
+    "category": "mental_health",
+    "source": "MOH"
+  },
+  {
+    "question": "How does work stress or burnout affect the medical leave and safety incidents of employees?",
+    "chunk_id": "3ec2dd2b-af33-caed-ae6f-a0723e252df8",
+    "category": "mental_health",
+    "source": "MOH"
+  },
+  {
+    "question": "What are some reasons parents might not engage in workshops or support groups for their children's mental health?",
+    "chunk_id": "8a4d1082-d6d8-dcae-f7f0-1ab085524a58",
+    "category": "mental_health",
+    "source": "MOH"
+  },
+  {
+    "question": "What does the National Mental Health and Well-being Strategy emphasize about the importance of mental health in relation to the COVID-19 pandemic?",
+    "chunk_id": "a7245ad1-d1c8-cd2d-39c3-4416676ce5a6",
+    "category": "mental_health",
+    "source": "MOH"
+  },
+  {
+    "question": "What additional mental health conditions are Tier 3 practitioners expected to identify and support beyond anxiety and depressive disorders?",
+    "chunk_id": "0795a366-ae60-f768-8275-5e11e9e8013b",
+    "category": "mental_health",
+    "source": "MOH"
+  },
+  {
+    "question": "What programme does the organization implement to enhance employee health and well-being?",
+    "chunk_id": "97150246-e7dc-481f-add4-ff1a8e324f1e",
+    "category": "mental_health",
+    "source": "NCSS"
+  },
+  {
+    "question": "What did Krishnan hear in the audio recording that confirmed his suspicions about his wife?",
+    "chunk_id": "35bb2bd1-4468-7298-09cf-dc8700396f5a",
+    "category": "mental_health",
+    "source": "NCSS"
+  },
+  {
+    "question": "What trend was observed in the number and rate of workplace minor injuries from 2023 to 2024?",
+    "chunk_id": "f7bed50a-6423-e32c-d66c-e916a8a203d3",
+    "category": "wsh_statistics",
+    "source": "MOM"
+  },
+  {
+    "question": "What regulations govern the medical examinations required for the 19 hazards in the Medical Surveillance Programme?",
+    "chunk_id": "df023e6d-0e4e-39dd-a8d5-b1e67e7dedb3",
+    "category": "wsh_statistics",
+    "source": "MOM"
+  },
+  {
+    "question": "What are some of the unsafe acts and conditions contributing to work-related traffic accidents according to the WSH National Statistics Report 2024?",
+    "chunk_id": "a8f6d25b-a57c-5a66-5de3-e5423e3248f9",
+    "category": "wsh_statistics",
+    "source": "MOM"
+  },
+  {
+    "question": "What was the total number of workplace minor injuries for Type A in 2024?",
+    "chunk_id": "541c9861-48f9-d5c1-6337-77beffa406c6",
+    "category": "wsh_statistics",
+    "source": "MOM"
+  },
+  {
+    "question": "What was the total workplace injury rate for the construction industry per 100,000 workers in 2024?",
+    "chunk_id": "b5e2d0ad-2a34-b223-c169-11fcdd3c1c98",
+    "category": "wsh_statistics",
+    "source": "MOM"
+  },
+  {
+    "question": "What are the requirements for workplaces with hazards regarding medical examinations for exposed workers?",
+    "chunk_id": "eb66ed38-3076-342e-feda-bfee2f638c61",
+    "category": "wsh_statistics",
+    "source": "MOM"
+  },
+  {
+    "question": "What was the fatal and major injury rate per 100,000 workers in the Transportation & Storage sector for 2024?",
+    "chunk_id": "6cab93f0-dc41-44cf-04f6-3d745d0d0880",
+    "category": "wsh_statistics",
+    "source": "MOM"
+  },
+  {
+    "question": "Which countries have consistently achieved a workplace fatal injury rate of less than 1.0 per 100,000 workers?",
+    "chunk_id": "00a37acc-36fe-f0a8-d85b-a36f39bfe8b7",
+    "category": "wsh_statistics",
+    "source": "MOM"
+  },
+  {
+    "question": "What was the total number of work injury claims awarded in 2024?",
+    "chunk_id": "3ae79d9f-1028-37c4-1421-9fbd2f1fbb50",
+    "category": "wsh_statistics",
+    "source": "MOM"
+  },
+  {
+    "question": "Who is eligible to sign up for an EP eService or WP Online account?",
+    "chunk_id": "d107c1ac-7717-2590-9555-de322e69c60b",
+    "category": "policy",
+    "source": "MOM"
+  },
+  {
+    "question": "What should be done if an EP eService administrator or user has left the company?",
+    "chunk_id": "781ed17a-8b65-017f-1808-8c0fd1abe36a",
+    "category": "policy",
+    "source": "MOM"
+  },
+  {
+    "question": "Which organizations jointly issued the policy related to PH pay and the myMOM Portal?",
+    "chunk_id": "5f3dee92-fd98-135c-0efc-de35babb3e1d",
+    "category": "policy",
+    "source": "MOM"
+  },
+  {
+    "question": "What should employees do if they continue to test positive for COVID-19?",
+    "chunk_id": "4ae68e95-8417-02bb-7d07-9d7fe45a9d14",
+    "category": "policy",
+    "source": "MOM"
+  },
+  {
+    "question": "What checks are performed on EP eService and WP Online administrators and users regarding work pass-related data?",
+    "chunk_id": "251bc039-d040-9608-2a71-749601b39e10",
+    "category": "policy",
+    "source": "MOM"
+  },
+  {
+    "question": "What is the purpose of the Lean Enterprise Development (LED) scheme mentioned in the document?",
+    "chunk_id": "344d9a59-0f12-c843-217a-4bb64ebc419f",
+    "category": "policy",
+    "source": "MOM"
+  },
+  {
+    "question": "How can staff absences due to COVID-19 infections affect business operations?",
+    "chunk_id": "ec919664-964a-2722-78a0-0c1d887b88fb",
+    "category": "policy",
+    "source": "MOM"
+  },
+  {
+    "question": "What should employers implement to minimize work disruptions during haze conditions?",
+    "chunk_id": "13fb69d8-2df0-bf7e-3764-3a3913b97e67",
+    "category": "policy",
+    "source": "MOM"
+  },
+  {
+    "question": "What services does TADM provide for self-employed persons facing payment disputes?",
+    "chunk_id": "08e793a2-9fdb-1d48-79b4-19f6d568c4a1",
+    "category": "policy",
+    "source": "MOM"
+  },
+  {
+    "question": "What significant agreement regarding work-related stress was signed by French social partners in July 2008?",
+    "chunk_id": "87b5bb2e-bf48-6196-2897-a3f254ee4b80",
+    "category": "stress_psychosocial",
+    "source": "ILO"
+  },
+  {
+    "question": "What strategies does the ILO suggest for managing mental health issues related to psychosocial hazards in the workplace?",
+    "chunk_id": "2933923e-9650-64a4-54fc-aca34c59c798",
+    "category": "stress_psychosocial",
+    "source": "ILO"
+  },
+  {
+    "question": "What are the key components involved in managing workplace stress according to the ILO?",
+    "chunk_id": "80c25af0-06df-f667-c2c5-f33e671f78f4",
+    "category": "stress_psychosocial",
+    "source": "ILO"
+  },
+  {
+    "question": "What initiative did Prevent launch in 2011 to address IT-related stress?",
+    "chunk_id": "7cc5211a-9378-6ae7-925d-763305e31e4a",
+    "category": "stress_psychosocial",
+    "source": "ILO"
+  },
+  {
+    "question": "How many experts were involved in the ILO study on workplace stress from Europe and Central Asia?",
+    "chunk_id": "dca412f9-7920-5f30-bd59-7d2f88d6e2a4",
+    "category": "stress_psychosocial",
+    "source": "ILO"
+  },
+  {
+    "question": "What do some national OSH laws require employers to do regarding psychosocial hazards?",
+    "chunk_id": "629b298f-161f-edf5-435f-df7c73d5698b",
+    "category": "stress_psychosocial",
+    "source": "ILO"
+  },
+  {
+    "question": "What should a comprehensive OSH management system include to effectively manage psychosocial risks in the workplace?",
+    "chunk_id": "12e8e3e4-6cf9-5863-b134-0fcb2e578473",
+    "category": "stress_psychosocial",
+    "source": "ILO"
+  },
+  {
+    "question": "What is the title of the study mentioned in the ILO report that focuses on healthy work and stress among aged women in Sweden?",
+    "chunk_id": "a92af1fe-82b6-cad0-135b-e22c23509503",
+    "category": "stress_psychosocial",
+    "source": "ILO"
+  },
+  {
+    "question": "What percentage of workers in Europe reported experiencing work-related stress for all or most of their working time?",
+    "chunk_id": "c416a345-2a88-4bcb-c868-9cad04cf482f",
+    "category": "stress_psychosocial",
+    "source": "ILO"
+  },
+  {
+    "question": "What type of actions are more effective in promoting a positive work environment than global praise and generic gifts?",
+    "chunk_id": "2bfdd5c7-5d30-ed2b-9573-3606dc22c7af",
+    "category": "workplace_wellness",
+    "source": "Great_Place_To_Work"
+  },
+  {
+    "question": "What is the purpose of the GROSS movement mentioned in the SGH Well-being Playbook?",
+    "chunk_id": "9e24c886-9d98-0ef1-30cb-a5958e70365a",
+    "category": "workplace_wellness",
+    "source": "SGH"
+  },
+  {
+    "question": "What is defined as the property of their respective holders on the HPB website?",
+    "chunk_id": "15edb101-7c2b-80aa-c3d6-40a0de7914ff",
+    "category": "workplace_wellness",
+    "source": "HPB"
+  },
+  {
+    "question": "What is the purpose of the images and information provided on the Nutri-Grade beverages page?",
+    "chunk_id": "e95ca268-cc58-b220-0b75-9aa1b9097786",
+    "category": "workplace_wellness",
+    "source": "HPB"
+  },
+  {
+    "question": "What tools and schemes does HPB provide to help companies create a health promoting environment for their employees?",
+    "chunk_id": "756b1192-1a1d-5231-657e-965d62986a1b",
+    "category": "workplace_wellness",
+    "source": "HPB"
+  },
+  {
+    "question": "What types of brand advertisements are permitted regarding Nutri-Grade beverages?",
+    "chunk_id": "99066429-2dc6-41b6-7340-b26e4e19614d",
+    "category": "workplace_wellness",
+    "source": "HPB"
+  },
+  {
+    "question": "What information can I find in the Healthy Meals FAQ regarding the Healthy Meals in Preschools / Schools Programmes?",
+    "chunk_id": "f3b0c1a5-d494-dbc1-9c3d-331aea62cdfe",
+    "category": "workplace_wellness",
+    "source": "HPB"
+  },
+  {
+    "question": "What training do appointed peer supporters at SGH receive to help them support their peers?",
+    "chunk_id": "479c12cb-5082-339b-9398-06c2b901d8bf",
+    "category": "workplace_wellness",
+    "source": "SGH"
+  },
+  {
+    "question": "What is the process for justifying changes to original commitments in the workplace wellness program?",
+    "chunk_id": "14f8c166-11c8-64ea-79f9-666d553dd1c3",
+    "category": "workplace_wellness",
+    "source": "HPB"
+  },
+  {
+    "question": "What should I do if I or someone I know experiences sexual violence or harassment?",
+    "chunk_id": "12413a51-eb09-57a1-c3a4-4428890c7706",
+    "category": "harassment",
+    "source": "AWARE"
+  },
+  {
+    "question": "What recognition do charities receive for meeting the qualifying standards in disclosure under the Charity Transparency Framework?",
+    "chunk_id": "b63e5ecf-b48d-ed2b-ed04-8b14f2896724",
+    "category": "harassment",
+    "source": "AWARE"
+  },
+  {
+    "question": "What is a common myth about workplace harassment regarding the role of employers?",
+    "chunk_id": "43ed1317-ec78-ca52-3d21-aff4899ebbf4",
+    "category": "harassment",
+    "source": "MOM"
+  },
+  {
+    "question": "What is the mission of the organization regarding gender-based barriers in Singapore?",
+    "chunk_id": "dd8ee4a4-f286-67bb-3140-becbb831b2f9",
+    "category": "harassment",
+    "source": "AWARE"
+  },
+  {
+    "question": "What resources are available for Singapore citizens who cannot afford legal services related to workplace harassment?",
+    "chunk_id": "5266a5b2-b100-7dc8-73aa-7e7a0fd6823f",
+    "category": "harassment",
+    "source": "MOM"
+  },
+  {
+    "question": "What services does the CARE team provide at the Women’s Care Centre and Sexual Assault Care Centre?",
+    "chunk_id": "1da69e96-874b-74df-4b93-0ae8c3ac9cf8",
+    "category": "harassment",
+    "source": "AWARE"
+  },
+  {
+    "question": "What is the purpose of the Tripartite Advisory on Managing Workplace Harassment?",
+    "chunk_id": "ee4edc7d-15bb-0c29-c288-55d6b77e1ed2",
+    "category": "harassment",
+    "source": "MOM"
+  },
+  {
+    "question": "Under what circumstances can a Protection Order be granted for workplace harassment?",
+    "chunk_id": "4484843e-f68f-ddc0-98c7-15133b531fc6",
+    "category": "harassment",
+    "source": "MOM"
+  },
+  {
+    "question": "What types of behaviors are considered forms of harassment?",
+    "chunk_id": "f08032b5-d9eb-6eac-a502-05cc0c80bc27",
+    "category": "harassment",
+    "source": "AWARE"
+  },
+  {
+    "question": "Under what circumstances can the identity of a whistle-blower be disclosed?",
+    "chunk_id": "1555bcbd-9986-ca8a-cd95-5683f05b9d07",
+    "category": "crisis_support",
+    "source": "SOS"
+  },
+  {
+    "question": "What must users do to withdraw their personal data from SOS?",
+    "chunk_id": "6c061e9b-6f5f-08dc-9b97-b7213627311c",
+    "category": "crisis_support",
+    "source": "SOS"
+  },
+  {
+    "question": "What is the focus of the 1-day workshop at Level 1 regarding suicide survivors?",
+    "chunk_id": "5586e2fe-0e53-c0bd-c839-dd664c26f488",
+    "category": "crisis_support",
+    "source": "SOS"
+  },
+  {
+    "question": "How can I contact SOS if I want to avoid Third Party Service Provider's terms?",
+    "chunk_id": "82cb0477-a322-d6c7-60b9-a34463f98129",
+    "category": "crisis_support",
+    "source": "SOS"
+  },
+  {
+    "question": "What support options are available for someone in crisis?",
+    "chunk_id": "b4abdef5-cea8-0384-ea28-4a73757910ec",
+    "category": "crisis_support",
+    "source": "SOS"
+  },
+  {
+    "question": "What types of physical spaces can be utilized for training events?",
+    "chunk_id": "f3dde4c1-25b1-2654-7681-45623355cb78",
+    "category": "crisis_support",
+    "source": "SOS"
+  },
+  {
+    "question": "What should I know about the handling of my information if I am located outside of Singapore?",
+    "chunk_id": "647015d4-9d49-ecc3-043a-f9812c4b08c2",
+    "category": "crisis_support",
+    "source": "SOS"
+  },
+  {
+    "question": "How does the death of a peer affect someone in their mid-30s?",
+    "chunk_id": "258321c2-ee75-50ad-6d0c-a683dad2983b",
+    "category": "crisis_support",
+    "source": "SOS"
+  },
+  {
+    "question": "What services does SOS offer for individuals thinking about suicide?",
+    "chunk_id": "69ced30f-3b35-342a-ad27-f0dc97259dae",
+    "category": "crisis_support",
+    "source": "SOS"
+  },
+  {
+    "question": "What are the conditions that need to be met for an employee to continue using flexible work arrangements?",
+    "chunk_id": "90409490-e86b-7053-7810-059e8893a2c5",
+    "category": "flexible_work",
+    "source": "MOM"
+  },
+  {
+    "question": "What should an employee do if their employer does not have a process for submitting flexible work arrangement requests?",
+    "chunk_id": "5007a234-fc2d-8d45-f97f-9cc0ee88af04",
+    "category": "flexible_work",
+    "source": "MOM"
+  },
+  {
+    "question": "How should employers and employees approach discussions about flexible work arrangement requests?",
+    "chunk_id": "fd060470-cd7e-3371-4599-7bde9ae096fd",
+    "category": "flexible_work",
+    "source": "MOM"
+  },
+  {
+    "question": "What is the current trend regarding discussions about work arrangements between employers and employees?",
+    "chunk_id": "80cacca2-58cc-b786-e0f6-c17f2c5abe63",
+    "category": "flexible_work",
+    "source": "MOM"
+  },
+  {
+    "question": "What should employers and employees do if they disagree about flexible work arrangement requests?",
+    "chunk_id": "f0ff4c87-acb6-2ac3-8897-1cf7c4b15de5",
+    "category": "flexible_work",
+    "source": "MOM"
+  },
+  {
+    "question": "What is the timeframe for receiving a decision on a flexible work arrangement request according to the Tripartite Guidelines?",
+    "chunk_id": "22a709cf-59bf-d056-ec65-f80afa965d74",
+    "category": "flexible_work",
+    "source": "MOM"
+  },
+  {
+    "question": "What should employers do to support employees on flexible work arrangements?",
+    "chunk_id": "e68ca381-d303-bdd7-ed3a-2a02b0a1bab3",
+    "category": "flexible_work",
+    "source": "MOM"
+  },
+  {
+    "question": "Can an employee face disciplinary action under the Employment Act for misconduct committed while on Flexible Work Arrangement?",
+    "chunk_id": "f09f508e-a1b4-f94c-5848-6401a6e34044",
+    "category": "flexible_work",
+    "source": "MOM"
+  },
+  {
+    "question": "Where can I find information on requesting and using flexible work arrangements (FWAs) for employees?",
+    "chunk_id": "39cfe973-174a-ff4c-c851-ae6fcf956fde",
+    "category": "flexible_work",
+    "source": "MOM"
+  },
+  {
+    "question": "What should employers do before implementing measures related to excess manpower?",
+    "chunk_id": "e5df5456-e8fc-8a05-30bf-47d2a4df3e39",
+    "category": "employment_practices",
+    "source": "MOM"
+  },
+  {
+    "question": "What strategies should employers implement to support employees during a retrenchment process?",
+    "chunk_id": "7fbc75e7-5f41-3538-cdad-d5bbb28775e2",
+    "category": "employment_practices",
+    "source": "MOM"
+  },
+  {
+    "question": "What is the Annual Wage Supplement (AWS) and when is it typically paid?",
+    "chunk_id": "5d32fefb-999e-6a44-1314-a5bd6039b51b",
+    "category": "employment_practices",
+    "source": "MOM"
+  },
+  {
+    "question": "What resources are available for employers seeking assistance with managing excess manpower?",
+    "chunk_id": "c1a03fd6-fb72-3ef3-b976-b8755d8c1fe0",
+    "category": "employment_practices",
+    "source": "MOM"
+  },
+  {
+    "question": "What steps should employers take to assist employees who are being retrenched?",
+    "chunk_id": "a94b3047-acea-4914-b0a9-20091e533c00",
+    "category": "employment_practices",
+    "source": "MOM"
+  },
+  {
+    "question": "What should employers do to support affected employees after announcing retrenchment?",
+    "chunk_id": "87c6c5ae-e715-b435-bac7-b0551b35c91b",
+    "category": "employment_practices",
+    "source": "MOM"
+  },
+  {
+    "question": "What should employers do before publicly announcing a retrenchment?",
+    "chunk_id": "6d68dc0f-51b6-5c0a-947c-459a748caeb9",
+    "category": "employment_practices",
+    "source": "MOM"
+  },
+  {
+    "question": "What should employers avoid doing when managing excess manpower and retrenching employees?",
+    "chunk_id": "98fec89e-cffa-912c-20b2-54cc63a54b48",
+    "category": "employment_practices",
+    "source": "MOM"
+  },
+  {
+    "question": "What should be done to employees when their job scope is enlarged, enriched, or restructured?",
+    "chunk_id": "2e42c3e9-e4cd-c970-a3c1-bdf793c45032",
+    "category": "employment_practices",
+    "source": "MOM"
+  },
+  {
+    "question": "What does the FCF require employers in Singapore to do regarding job opportunities?",
+    "chunk_id": "cd2b6119-483f-8e98-c628-b35efeb7c383",
+    "category": "workplace_fairness",
+    "source": "MOM"
+  }
+]
