@@ -4,6 +4,7 @@
  
 import json
 import time
+import tiktoken
 from pathlib import Path
 from tqdm import tqdm
 from openai import OpenAI
@@ -141,7 +142,13 @@ def tag_all_chunks(chunks: list, oai: OpenAI) -> list:
 # ── Embedding ─────────────────────────────────────────────────────────────────
  
 def embed_texts(texts: list, oai: OpenAI) -> list:
-    response = oai.embeddings.create(model=config.EMBEDDING_MODEL, input=texts)
+    _enc = tiktoken.get_encoding("cl100k_base")
+    _MAX = 8191
+    safe = []
+    for t in texts:
+        tokens = _enc.encode(t)
+        safe.append(_enc.decode(tokens[:_MAX]) if len(tokens) > _MAX else t)
+    response = oai.embeddings.create(model=config.EMBEDDING_MODEL, input=safe)
     return [item.embedding for item in response.data]
  
  

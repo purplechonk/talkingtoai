@@ -8,7 +8,7 @@ import uuid
 import hashlib
 import tiktoken
 from typing import Optional
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_experimental.text_splitter import SemanticChunker
 from langchain_openai import OpenAIEmbeddings
  
@@ -29,12 +29,13 @@ def _count_tokens(text: str) -> int:
 def _stable_id(doc: dict, strategy: str, text: str) -> str:
     """
     Deterministic chunk ID derived from doc content_hash + strategy + text.
+    Returned as a UUID string (required by Qdrant — must be uint or UUID).
     Same source text + same strategy always produces the same ID, so
-    re-running notebook 02 after adding new sources only upserts changed/new
-    chunks — it never creates duplicates of unchanged content.
+    re-running notebook 02 only upserts changed/new chunks — no duplicates.
     """
     key = f"{doc.get('content_hash', doc.get('url', ''))}-{strategy}-{text[:200]}"
-    return hashlib.sha256(key.encode()).hexdigest()
+    digest = hashlib.sha256(key.encode()).hexdigest()[:32]
+    return str(uuid.UUID(hex=digest))
 
 
 def _make_chunk(text: str, doc: dict, strategy: str, parent_id: Optional[str] = None) -> dict:

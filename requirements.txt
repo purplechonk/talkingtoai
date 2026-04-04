@@ -15,16 +15,19 @@ beautifulsoup4>=4.13.0
 # Vector DB
 qdrant-client[fastembed]>=1.9.0
 fastembed>=0.3.0
+onnxruntime==1.19.2
 
 # LangChain
 langchain>=0.2.0
+langchain_text_splitters>=0.2.0
 langchain-openai>=0.1.0
 langchain-qdrant>=0.1.0
 langchain-experimental>=0.0.60   # SemanticChunker lives here
 
 # Reranking
 sentence-transformers>=3.0.0
-torch>=2.0.0
+torch==2.5.1+cpu
+typing_extensions>=4.12.0
 
 # Evaluation
 ragas>=0.1.9
