@@ -9,18 +9,52 @@ from qdrant_client import QdrantClient, models
 from qdrant_client.models import SparseVector
 from fastembed import SparseTextEmbedding
 from sentence_transformers import CrossEncoder
- 
-from langchain_qdrant import QdrantVectorStore
-from langchain_openai import ChatOpenAI, OpenAIEmbeddings
-from langchain.retrievers import MultiQueryRetriever, ContextualCompressionRetriever
-from langchain.retrievers.document_compressors import LLMChainExtractor
- 
+
 import sys
 from pathlib import Path as _Path
 sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))
 import config
- 
- 
+
+
+def _multi_query_retriever_cls():
+    """LangChain 1.x moved retrievers out of `langchain.retrievers`; use langchain-classic fallback."""
+    try:
+        from langchain.retrievers import MultiQueryRetriever
+
+        return MultiQueryRetriever
+    except ImportError:
+        try:
+            from langchain_classic.retrievers.multi_query import MultiQueryRetriever
+
+            return MultiQueryRetriever
+        except ImportError as e:
+            raise ImportError(
+                'multi_query needs retriever classes. Install: pip install "langchain-classic>=1.0"'
+            ) from e
+
+
+def _compression_retriever_components():
+    try:
+        from langchain.retrievers import ContextualCompressionRetriever
+        from langchain.retrievers.document_compressors import LLMChainExtractor
+
+        return ContextualCompressionRetriever, LLMChainExtractor
+    except ImportError:
+        try:
+            from langchain_classic.retrievers.contextual_compression import (
+                ContextualCompressionRetriever,
+            )
+            from langchain_classic.retrievers.document_compressors.chain_extract import (
+                LLMChainExtractor,
+            )
+
+            return ContextualCompressionRetriever, LLMChainExtractor
+        except ImportError as e:
+            raise ImportError(
+                'compression needs retriever classes. Install: pip install "langchain-classic>=1.0"'
+            ) from e
+
+
 # ── Low-level search helpers (your existing code, unchanged) ──────────────────
  
 def get_dense_vec(query: str, oai: OpenAI) -> list:
@@ -143,6 +177,10 @@ def multi_query_search(
     search, then merges and deduplicates results.
     Helps when queries are ambiguous or phrased in an unusual way.
     """
+    from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+    from langchain_qdrant import QdrantVectorStore
+
+    MultiQueryRetriever = _multi_query_retriever_cls()
     lc_embeddings = OpenAIEmbeddings(model=config.EMBEDDING_MODEL, api_key=openai_api_key)
     vectorstore   = QdrantVectorStore(
         client=qdrant,
@@ -187,6 +225,10 @@ def compression_search(
     sentences within each chunk that are relevant to the query.
     Produces cleaner, more focused context — at the cost of extra LLM calls.
     """
+    from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+    from langchain_qdrant import QdrantVectorStore
+
+    ContextualCompressionRetriever, LLMChainExtractor = _compression_retriever_components()
     lc_embeddings = OpenAIEmbeddings(model=config.EMBEDDING_MODEL, api_key=openai_api_key)
     vectorstore   = QdrantVectorStore(
         client=qdrant,

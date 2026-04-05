@@ -9,7 +9,7 @@ python-dotenv>=1.0.0
 httpx>=0.27.0
 pdfplumber>=0.11.0
 trafilatura
-lxml_html_clean>=2.0.0
+lxml_html_clean>=0.4.0   # PyPI package is 0.x only (no 2.x release)
 beautifulsoup4>=4.13.0
 
 # Vector DB
@@ -19,6 +19,7 @@ onnxruntime==1.19.2
 
 # LangChain
 langchain>=0.2.0
+langchain-classic>=1.0.0   # MultiQueryRetriever / compression (LC 1.x moved these out of langchain.retrievers)
 langchain_text_splitters>=0.2.0
 langchain-openai>=0.1.0
 langchain-qdrant>=0.1.0
