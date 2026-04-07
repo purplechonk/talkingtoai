@@ -1,0 +1,452 @@
+[
+  {
+    "user_input": "What is acne?",
+    "reference": "Acne is a skin condition that occurs when sebum, an oil produced by your skin, along with dead skin cells clog your skin pores, creating whiteheads and blackheads. It can develop into papules, pustules, nodules, and cysts, and can occur on your face, chest, or back.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "aef893fb-ce89-b9c4-b616-1dfd6b5a5b79",
+    "category": "physical_wellness",
+    "source": "HPB"
+  },
+  {
+    "user_input": "What does the term 'Qualified Exercise Professional (QEP)' mean in the context of physical activity guidelines?",
+    "reference": "A Qualified Exercise Professional (QEP) is a trained individual who can provide specific advice for physical activity that is safe and tailored to your lifestyle and any recommendations from your health care provider. They are essential for helping individuals become more active while considering any health concerns.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "2b697a90-0b0b-793c-b144-f0ea7f309ce8",
+    "category": "physical_wellness",
+    "source": "HPB"
+  },
+  {
+    "user_input": "What percentage of preschool children are likely to carry their physical activity habits into adolescence?",
+    "reference": "The text indicates that physical activity habits established during childhood are likely to be carried through into adolescence, but it does not specify a percentage.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "089622c6-6893-b25b-9e72-ab41e0a2000c",
+    "category": "physical_wellness",
+    "source": "HPB"
+  },
+  {
+    "user_input": "What does physical activity mean according to the Singapore Physical Activity Guidelines 2022?",
+    "reference": "Physical activity is defined as any movement that engages multiple muscle groups and requires energy expenditure. It includes activities like dancing, which can help sustain long-term physical activity levels and improve coordination and balance.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "cbeb3922-7762-3a80-b8d1-b3d024305f51",
+    "category": "physical_wellness",
+    "source": "HPB"
+  },
+  {
+    "user_input": "What are the eligibility criteria for skilled workers to work in Singapore?",
+    "reference": "Candidates need to earn at least $3,300 a month to be eligible for skilled worker positions in Singapore.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "5781a8fe-354f-c569-958e-07420d7037d0",
+    "category": "policy",
+    "source": "MOM"
+  },
+  {
+    "user_input": "What steps should I follow to enable Transport Layer Security (TLS) on my web browser for secure transactions with MOM?",
+    "reference": "To enable Transport Layer Security (TLS) on your web browser, you need to follow the specific steps outlined for your browser version. If your browser is outdated, it is recommended to upgrade to the latest version to ensure secure transactions with MOM.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "45df6286-e712-b36c-a0ff-5059decca461",
+    "category": "policy",
+    "source": "MOM"
+  },
+  {
+    "user_input": "What should I do if my browser version is not supported after 27 May 2018?",
+    "reference": "If your browser version is not supported after 27 May 2018, you should either enable the Transport Layer Security (TLS) of your web browser or upgrade to the latest version of your browser to continue transacting with MOM securely.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "41972090-a874-3213-37d8-e7f0cbf17b10",
+    "category": "policy",
+    "source": "MOM"
+  },
+  {
+    "user_input": "What features does the myMOM Portal offer for managing work passes and related transactions?",
+    "reference": "The myMOM Portal allows you to manage work pass and related transactions, including applying, renewing, appealing, issuing, canceling, withdrawing, or replacing passes for Employment Pass, S Pass, and family passes. It also enables you to apply and appeal for Work Permits, view lists of new and existing pass holders, and check and pay foreign worker levy bills.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "2f6061ac-741c-1048-f831-efdea29cbb11",
+    "category": "policy",
+    "source": "MOM"
+  },
+  {
+    "user_input": "What are workplace grievances as defined in the text?",
+    "reference": "Workplace grievances refer to discontent or feelings of unfairness at work, which may be experienced by an individual employee or a group of employees. Examples include situations like a wage cut or a retrenchment exercise that affects several employees or the entire workforce.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "b7c9773a-cfdc-23b1-492f-0e1f413bf918",
+    "category": "workplace_fairness",
+    "source": "TAFEP"
+  },
+  {
+    "user_input": "What should HR professionals do to stay informed about fair and progressive employment practices in Singapore?",
+    "reference": "HR professionals should keep up with the latest news on fair and progressive employment in Singapore by regularly checking updates from TAFEP and other reliable sources.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "13d8fd82-c19a-e3c7-81f6-6cc03465b5f2",
+    "category": "workplace_fairness",
+    "source": "TAFEP"
+  },
+  {
+    "user_input": "What can HR professionals do to ensure that workplace fairness legislation is effectively tailored to our local context?",
+    "reference": "HR professionals should engage with a diverse group of stakeholders, including employee groups, employers, trade associations, and legal professionals, to gather feedback on workplace fairness legislation. This can be done through dialogues, focus group discussions, surveys, and public feedback exercises to understand the sentiments and expectations regarding the legislation.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "a48045ff-4fb7-b2c9-c900-c21e29198b73",
+    "category": "workplace_fairness",
+    "source": "MOM"
+  },
+  {
+    "user_input": "What are the guidelines for religion-affiliated entities regarding employment decisions based on religious requirements?",
+    "reference": "Religion-affiliated entities with a secular purpose can make employment decisions based on religion only if it is a genuine and reasonable job requirement. However, discretion is granted only to a specific group of religious organisations, which must exercise this discretion responsibly.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "e7c9e46c-4312-5a5a-cfb8-e002cd48aa27",
+    "category": "workplace_fairness",
+    "source": "MOM"
+  },
+  {
+    "user_input": "What are the obligations of individuals regarding access and correction of their personal data at SOS?",
+    "reference": "Individuals can request access, correction, or withdrawal of consent for their personal data by contacting the Data Protection Officer (DPO) via E-Form or email. SOS will provide access to personal data under its control and details of its use over the past 12 months, but may deny requests that threaten health, reveal others' data, or contradict national interest. SOS will also correct any known errors or omissions in personal data.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "f685ac96-220a-8600-7950-a363685c4982",
+    "category": "crisis_support",
+    "source": "SOS"
+  },
+  {
+    "user_input": "What are the conditions under which SOS may terminate my access to the Services?",
+    "reference": "SOS may unilaterally terminate your access to the Services at any time if you violate the Terms, or if they determine that you’d be better served by a different kind of support.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "1a0a4026-57b5-187a-c4ec-63cd0a5eb233",
+    "category": "crisis_support",
+    "source": "SOS"
+  },
+  {
+    "user_input": "What does it mean to nominate SOS as a beneficiary for suicide prevention efforts?",
+    "reference": "Nominating SOS as a beneficiary means supporting their fundraising events, which help fund their programmes and services aimed at suicide prevention. This action also raises awareness about the issue and helps reduce the stigma surrounding it in Singapore.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "ca3e4cfb-0492-e0d8-0e0d-376e54c1e71c",
+    "category": "crisis_support",
+    "source": "SOS"
+  },
+  {
+    "user_input": "What does SOS do in the context of suicide prevention?",
+    "reference": "SOS supports the at-risk community by providing assistance and resources for those experiencing a crisis, thinking about, or affected by suicide. They also aim to educate the public about Singapore's suicide landscape and the collective role we can play in supporting individuals in need.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "1205420e-e4b6-389f-0e0a-e7fc16c33dca",
+    "category": "crisis_support",
+    "source": "SOS"
+  },
+  {
+    "user_input": "What percentage of stakeholders focus on translating research into practice regarding workplace stress?",
+    "reference": "42% of stakeholders focus on translating research into practice in the area of workplace stress.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "0fd583e4-6d43-06da-09f1-4014d79726c0",
+    "category": "stress_psychosocial",
+    "source": "ILO"
+  },
+  {
+    "user_input": "What can I do if I am experiencing work-related stress?",
+    "reference": "If you are experiencing work-related stress, it is important to seek support from your employer or HR department. They can provide resources and guidance on managing stress in the workplace. Additionally, consider discussing your concerns with a trusted colleague or seeking professional help if needed.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "298f3289-b7a5-efb3-bb6e-bcdad96250d5",
+    "category": "stress_psychosocial",
+    "source": "ILO"
+  },
+  {
+    "user_input": "What can I do to prevent stress and violence in the workplace?",
+    "reference": "To prevent stress and violence in the workplace, it is important to follow guidance provided by organizations such as DOSH, which offers specific strategies for creating a safer work environment. Engaging in mental health awareness initiatives and promoting psychosocial well-being can also help mitigate these issues. Additionally, staying informed about resources and best practices from relevant health organizations can support a healthier workplace.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "5e0ef389-6f69-a517-898e-24ec4f7b55e6",
+    "category": "stress_psychosocial",
+    "source": "ILO"
+  },
+  {
+    "user_input": "What can I do as a manager to address workplace violence and psychological harassment in my team?",
+    "reference": "As a manager, you should be aware that workplace violence includes both physical and psychological harm, such as bullying and harassment. Implementing clear policies against such behaviors, promoting a culture of respect, and providing training on conflict resolution can help mitigate these issues. Additionally, regularly checking in with employees about their mental health and creating an open environment for reporting concerns are essential steps.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "6475a6bf-f70a-207f-3d91-1954897452e0",
+    "category": "stress_psychosocial",
+    "source": "ILO"
+  },
+  {
+    "user_input": "What can I do if I want to join HPB and contribute to building a healthier nation?",
+    "reference": "You can explore available job opportunities at HPB and apply for a career that is both challenging and rewarding. By joining HPB, you will be part of a team that is dedicated to shaping healthier lives and making a positive change in Singapore.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "9c0d4684-f57f-a6aa-cb71-b07a2938bf0d",
+    "category": "workplace_wellness",
+    "source": "HPB"
+  },
+  {
+    "user_input": "What percentage of Singapore's population is projected to be affected by type 2 diabetes in the future?",
+    "reference": "The text does not provide a specific percentage of Singapore's population projected to be affected by type 2 diabetes. However, it references a study that forecasts the burden of type 2 diabetes in Singapore, indicating that this is a significant health concern.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "b6f1dd17-b585-645b-3b40-3b103c369934",
+    "category": "workplace_wellness",
+    "source": "HPB"
+  },
+  {
+    "user_input": "What can I do to become a Health Ambassador and promote a healthy lifestyle in Singapore?",
+    "reference": "Anyone can become a Health Ambassador! If you are an active Singaporean who enjoys a healthy lifestyle, you can join the Health Ambassador family. As a Health Ambassador, you will engage with others to promote active living and support HPB programmes and activities among community partners.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "09533392-4e3d-ec53-7d8a-ce2e053a90b0",
+    "category": "workplace_wellness",
+    "source": "HPB"
+  },
+  {
+    "user_input": "What does it mean to embed appreciation into daily operations in the workplace?",
+    "reference": "Embedding appreciation into daily operations means integrating recognition practices into the regular workflow rather than relying on occasional gestures. This can include offering onboarding surveys to understand employees' preferred appreciation styles, providing managers with toolkits for recognition, and incorporating shout-outs in team meetings and communications.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "ac763486-d0f4-a62a-3517-0b5b48bfe4db",
+    "category": "workplace_wellness",
+    "source": "Great_Place_To_Work"
+  },
+  {
+    "user_input": "How can HR professionals encourage a positive emotional climate regarding mental well-being in the organization?",
+    "reference": "HR professionals can encourage a positive emotional climate by ensuring that leadership, particularly the CEO-equivalent, sets the tone for how mental well-being issues are addressed. It is essential for leaders to prioritize their own well-being as a strategic responsibility, which in turn influences the organizational culture around mental health.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "5565f2ed-54f7-5e30-d0ce-013396c477fb",
+    "category": "mental_health",
+    "source": "WSH_Council"
+  },
+  {
+    "user_input": "What can I do if I feel stressed and need someone to talk to?",
+    "reference": "If you feel stressed and need someone to talk to, consider reaching out to mental health resources such as the Samaritans of Singapore at 1-767 or their CareText service via WhatsApp at 9151 1767, which is available 24 hours. You can also contact the Singapore Association for Mental Health Helpline at 1800-283-7019 during weekdays, or the Institute of Mental Health's Mental Health Helpline at 6389 2222, which is also available 24 hours.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "ed7fcda1-2dfc-22eb-2622-7bec4e807ac6",
+    "category": "mental_health",
+    "source": "NCSS"
+  },
+  {
+    "user_input": "What are the SHRM Certified Professional (SHRM-CP) and SHRM Senior Certified Professional (SHRM-SCP) certifications?",
+    "reference": "The SHRM Certified Professional (SHRM-CP) and SHRM Senior Certified Professional (SHRM-SCP) are comprehensive competency-based certifications for HR professionals. They are based on the SHRM Body of Applied Skills and Knowledge™ (SHRM BASK) and provide a roadmap for achieving personal and organizational successes, such as leadership opportunities and improved staff engagement.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "b7899be1-ee60-117f-9db6-67e62fc79922",
+    "category": "mental_health",
+    "source": "SHRM"
+  },
+  {
+    "user_input": "What disclaimers does NCSS provide regarding the information on their website?",
+    "reference": "NCSS provides the contents of their website on an 'as is' basis without any warranties of accuracy, reliability, or fitness for a particular purpose. They also disclaim liability for any damage or loss resulting from the use of the website, including reliance on its contents.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "5d921356-ace4-6837-2286-b2e12d3f6d5d",
+    "category": "mental_health",
+    "source": "NCSS"
+  },
+  {
+    "user_input": "What are the four strategies outlined in the OSHD 2015 for managing workplace safety and health (WSH)?",
+    "reference": "The four strategies outlined in the OSHD 2015 for managing workplace safety and health (WSH) are: 1) Building strong capabilities to better manage WSH, 2) Implementing an effective regulatory framework, 3) Promoting the benefits of WSH and recognizing best practices, and 4) Developing strong partnerships locally and internationally.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "845803fd-52e9-13a3-c2e3-35188f7e00f8",
+    "category": "wsh_statistics",
+    "source": "MOM"
+  },
+  {
+    "user_input": "What was the workplace fatal injury rate in the Marine industry in 2024?",
+    "reference": "The workplace fatal injury rate in the Marine industry in 2024 rose to 8.1 fatal injuries per 100,000 workers, up from 0.0 in 2023.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "a50e3a33-6fc3-2703-a327-1cdd3d81a34a",
+    "category": "wsh_statistics",
+    "source": "MOM"
+  },
+  {
+    "user_input": "What is the total number of workplace injuries related to physical assault as reported in the MOM WSH National Statistics Report 2024?",
+    "reference": "The total number of workplace injuries related to physical assault is 178.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "5788be9f-f462-3f7c-0953-53ae958faba2",
+    "category": "wsh_statistics",
+    "source": "MOM"
+  },
+  {
+    "user_input": "What were the reported cases of dangerous occurrences and occupational diseases in Singapore for 2024?",
+    "reference": "In 2024, there were 19 cases of dangerous occurrences reported, the same number as in 2023. Additionally, there were 899 cases of occupational diseases, a decrease from 1,229 cases in 2023.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "f76e8370-5d28-1e88-8da5-a0d4f8c4dcc7",
+    "category": "wsh_statistics",
+    "source": "MOM"
+  },
+  {
+    "user_input": "What should I do if my employer is considering redeployment during an economic downturn?",
+    "reference": "If your employer is considering redeployment, it is important for them to consult with you and the unions early on. They should communicate the impact of the redeployment clearly so that a mutually agreeable arrangement can be worked out, considering the livelihood of employees. Additionally, employers should review and restore any adjustments made when their businesses recover.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "045e7fbe-dfb3-547a-8b40-fc35634730bb",
+    "category": "employment_practices",
+    "source": "MOM"
+  },
+  {
+    "user_input": "What criteria should HR use to ensure fairness in the retrenchment process?",
+    "reference": "HR should use objective criteria such as the ability, experience, and skills of the employee to support the company’s sustainability and future business needs. It is crucial to apply these criteria consistently and avoid discrimination based on age, race, gender, religion, marital status, or family responsibility.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "5b18b1a6-2010-ed17-2bcc-7b47f6debc5f",
+    "category": "employment_practices",
+    "source": "MOM"
+  },
+  {
+    "user_input": "How can we implement a Flexible Work Schedule (FWS) in our organization?",
+    "reference": "To implement a Flexible Work Schedule (FWS), employers need to seek the support of unions and employees, and then apply to the Commissioner for Labour. Under FWS, employers can reduce weekly working hours without adjusting wages by creating a 'timebank' of unused working hours, which can be used to offset increased hours in subsequent periods. It's important to ensure that the safety and health of employees are considered, especially if applying for exemptions from certain Employment Act provisions.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "a72b52e5-3319-eeb5-d726-cf069ad9ce7e",
+    "category": "employment_practices",
+    "source": "MOM"
+  },
+  {
+    "user_input": "What steps should a company take before implementing no-pay leave for employees?",
+    "reference": "Before implementing no-pay leave, companies should consider and implement other measures, consult with their unions and employees, and recognize the impact on rank-and-file employees when determining the extent and duration of the no-pay leave. If necessary, no-pay leave can be applied alongside other cost-saving measures.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "84fb1674-3458-8a63-8d61-b930da7e13a7",
+    "category": "employment_practices",
+    "source": "MOM"
+  },
+  {
+    "user_input": "What steps should I take if I want to report harassment in the workplace?",
+    "reference": "The text does not provide specific procedures for reporting harassment. For detailed steps, please refer to the relevant sections on legal rights and possible precautions related to harassment in the workplace.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "7fc3ba27-52be-0572-c030-2733c707ca56",
+    "category": "harassment",
+    "source": "AWARE"
+  },
+  {
+    "user_input": "Can you provide an example of how AWARE has contributed to women's rights in Singapore?",
+    "reference": "AWARE was formed in 1985 by a group of women who wanted to campaign for gender equality in Singapore. They aimed to base their arguments on research and a thorough understanding of women's issues, which illustrates their commitment to advocating for women's rights in a coherent and consistent manner.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "565fb91a-a481-5728-cd4b-34903b1c3ce3",
+    "category": "harassment",
+    "source": "AWARE"
+  },
+  {
+    "user_input": "What are the steps for an employee to reach the AWARE Centre using public transport from Buona Vista Station?",
+    "reference": "To reach the AWARE Centre from Buona Vista Station on the East West Line, take the overhead bridge to the other side of North Buona Vista Road. Then, get on Bus 74 or 196 and get off three stops later outside the United World College on Dover Road. After that, cross the road, and you will be just a couple of minutes away from AWARE. If using the Circle Line, take the Ministry of Education exit and follow the same bus instructions.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "6c72b10c-85a0-90cf-bea0-7a305a8f261a",
+    "category": "harassment",
+    "source": "AWARE"
+  },
+  {
+    "user_input": "What does the term 'regulatory compliance' mean in the context of financial operations?",
+    "reference": "Regulatory compliance refers to the adherence to laws, regulations, guidelines, and specifications relevant to financial operations. It ensures that financial institutions operate within the legal framework and maintain the integrity and transparency of their financial systems.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "a5ccab04-9bef-136e-28f3-afc43c4642bb",
+    "category": "harassment",
+    "source": "AWARE"
+  },
+  {
+    "user_input": "Can you provide an example of a non-formal flexible work arrangement request?",
+    "reference": "An example of a non-formal FWA request is when an employee speaks to her supervisor and says, 'I would like to request to change my daily work hours from Mon-Fri, 8am-5pm to Mon-Fri, 10am-7pm, so that I can send my five-year-old son to school in the morning. I request for this arrangement to begin on 1 Jan 2025 and end on 31 Dec 2025.' This request is considered non-formal because it is not made in writing.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "1c9da6c7-2b72-ac9e-5749-d3bd4370d51e",
+    "category": "flexible_work",
+    "source": "MOM"
+  },
+  {
+    "user_input": "What should I do to ensure my employee's career prospects are not negatively affected if they take up a Flexible Work Arrangement (FWA)?",
+    "reference": "It is important to have an open discussion with the employee to understand expectations on work performance and deliverables before they take up an FWA. As a supervisor, you should abide by the Tripartite Guidelines on Fair Employment Practices and use fair appraisal systems, assessing employees based on their achieved outcomes and objective performance criteria. Additionally, if the FWA changes the employee's work scope and responsibilities, encourage them to have a candid conversation with you about the feasibility of the option and the expectations involved.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "189151f8-c47f-8007-3cad-53b681bfdd19",
+    "category": "flexible_work",
+    "source": "MOM"
+  },
+  {
+    "user_input": "What should employers do when handling formal flexible work arrangement requests from employees?",
+    "reference": "Employers should refer to the Tripartite Guidelines on Flexible Work Arrangement Requests when handling formal FWA requests. They are encouraged to discuss these requests in an open and constructive manner to reach a mutual agreement that meets both organizational and employee needs. If disagreements arise, they should be addressed through the organization's internal grievance handling procedure.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "5fb7cbe1-a8e5-cf6a-a23d-50ad1fbacffe",
+    "category": "flexible_work",
+    "source": "MOM"
+  },
+  {
+    "user_input": "What is the process for an employee to submit a formal Flexible Work Arrangement (FWA) request?",
+    "reference": "The process for submitting a formal FWA request involves the employee submitting the request to the employer, who should then properly consider it based on business needs. If the request is rejected, the employer is encouraged to communicate the decision within two months and engage the employee on alternatives. Employers should also have a process in place for submission, such as via a work portal or email to a supervisor, and employees must follow any stipulated requirements for the request.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "529651ff-8195-4c03-afd9-7f6203400a38",
+    "category": "flexible_work",
+    "source": "MOM"
+  },
+  {
+    "user_input": "What does 'vigorous-intensity physical activity' mean according to the Singapore Physical Activity Guidelines?",
+    "reference": "Vigorous-intensity physical activity refers to physical activity that is performed at 6.0 or more METS. On a scale relative to an individual’s personal capacity, it is usually rated as 7 or 8 on a scale of 0-10. Every minute of vigorous-intensity activity can generally be considered as two minutes worth of moderate-intensity activity.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "bcc8efd3-a84a-a59e-303f-f38a7125e0de",
+    "category": "physical_wellness",
+    "source": "HPB"
+  },
+  {
+    "user_input": "What can I do to enhance my HR skills and advance my career?",
+    "reference": "You can enhance your HR skills and advance your career by attending SHRM Seminars, which offer expert-led, interactive sessions designed to provide practical strategies and insights. These seminars also help you earn credentials and certifications, stay updated on evolving laws and trends, and learn from seasoned HR leaders. Choose from in-person or live online options that fit your schedule.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "b6810654-640d-b312-748f-76d86b899bc6",
+    "category": "mental_health",
+    "source": "SHRM"
+  },
+  {
+    "user_input": "What does psychosocial stress mean in the workplace?",
+    "reference": "Psychosocial stress in the workplace refers to the stress that arises from the interaction between work and the individual, which can affect mental health and well-being. It encompasses factors such as workload, work environment, and interpersonal relationships at work.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "4dfde5d3-7303-9aa5-0bc1-c126975c44e7",
+    "category": "stress_psychosocial",
+    "source": "ILO"
+  },
+  {
+    "user_input": "What does physical health mean in the context of workplace well-being?",
+    "reference": "Physical health is vital because it directly impacts overall well-being, affecting one’s ability to perform daily tasks, engage in activities, and maintain a high quality of life. Good physical health reduces the risk of chronic diseases, enhances mental health, and promotes longevity.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "9c3558d3-765a-483c-5322-9acc142e2a1f",
+    "category": "workplace_wellness",
+    "source": "SGH"
+  },
+  {
+    "user_input": "What can HR professionals do to ensure a fair and unbiased interview process?",
+    "reference": "HR professionals should ensure that employees involved in recruitment are appropriately trained on the principles of fair employment practices. They should have a list of selection criteria relevant to the job that is applied consistently to all candidates, a list of interview questions directly related to the selection criteria, and maintain proper records of the interview and assessment process for at least one year.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "2b130679-4ae1-59e3-d865-3cc9d122c581",
+    "category": "workplace_fairness",
+    "source": "TAFEP"
+  },
+  {
+    "user_input": "What steps should an HR professional take to access the EmPOWER eService?",
+    "reference": "To access the EmPOWER eService, an HR professional needs to have a Corppass. If they don’t have one, they should apply for it. Then, the Corppass admin or sub-admin must log in to Corppass, go to the eServices Access tab, choose EmPOWER as one of the company’s eServices, and assign it to the Corppass account.",
+    "response": null,
+    "retrieved_contexts": [],
+    "chunk_id": "4cde7d9e-e057-7028-ada4-c9cb5a331793",
+    "category": "workplace_fairness",
+    "source": "TAFEP"
+  }
+]
