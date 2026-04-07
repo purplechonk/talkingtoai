@@ -120,12 +120,12 @@ def run_eval_one(
         if rows:
             res = evaluate(
                 dataset=Dataset.from_list(rows),
-                metrics=FAILURE_METRICS,
+                metrics=[faithfulness, answer_relevancy], # no reference, so no context_precision and context_recall
                 llm=lc_llm,
                 embeddings=lc_emb,
             )
             df = res.to_pandas()
-            failure_scores = df[["faithfulness", "answer_relevancy", "context_precision"]].mean().to_dict()
+            failure_scores = df[["faithfulness", "answer_relevancy"]].mean().to_dict()
             print(f"  Failure scores: {failure_scores}")
  
         scores["n_failure"] = len(rows)
@@ -140,7 +140,7 @@ def run_eval_one(
             if out:
                 rows.append({
                     "user_input":         item["user_input"],
-                    "reference":          item["reference"],
+                    "reference":          ref,
                     "response":           out["answer"],
                     "retrieved_contexts": out["contexts"],
                 })
@@ -149,7 +149,13 @@ def run_eval_one(
         if rows:
             res = evaluate(
                 dataset=Dataset.from_list(rows),
-                metrics=GT_METRICS,
+                # includes reference, so context_precision and context_recall apply
+                metrics=[
+                    faithfulness,
+                    answer_relevancy,
+                    context_precision,
+                    context_recall,
+                ],
                 llm=lc_llm,
                 embeddings=lc_emb,
             )
@@ -157,6 +163,10 @@ def run_eval_one(
             gt_scores = df[["faithfulness", "answer_relevancy",
                             "context_precision", "context_recall"]].mean().to_dict()
             print(f"  GT scores: {gt_scores}")
+            scores["faithfulness"] = gt_scores["faithfulness"]
+            scores["answer_relevancy"] = gt_scores["answer_relevancy"]
+            scores["context_precision"] = gt_scores["context_precision"]
+            scores["context_recall"] = gt_scores["context_recall"]
  
         scores["n_gt"] = len(rows)
  
